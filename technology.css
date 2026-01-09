@@ -1,0 +1,328 @@
+@import url(https://fonts.googleapis.com/css?family=Amiko);
+
+body {
+	font-family: "Amiko";
+	margin: 0;
+}
+
+.header {
+	background-color: #46589280;
+}
+
+.topnav {
+	padding-top: 20px;
+	padding-bottom: 50px;
+
+	a {
+		float: right;
+		text-align: center;
+	}
+
+	a.split {
+		float: left;
+	}
+}
+
+h1 {
+	text-align: center;
+	padding-top: 20px;
+	position: relative;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 40px;
+}
+
+h2 {
+	text-align: center;
+}
+
+p {
+	text-align: center;
+}
+
+a:link {
+	color: white;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #800080;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #b266b2;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+a {
+	padding-left: 10px;
+	padding-right: 20px;
+}
+
+.dropdown {
+	float: right;
+	overflow: hidden;
+}
+
+.dropbtn {
+	font-size: 16px;
+	border: none;
+	outline: none;
+	color: white;
+	padding-left: 10px;
+	padding-right: 20px;
+	padding-bottom: 50px;
+	background-color: inherit;
+	font-family: inherit;
+	float: right;
+	text-align: center;
+}
+
+.dropbtn:visited {
+	color: #800080;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+.dropbtn:hover {
+	color: #b266b2;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+.dropdown-tab {
+	display: none;
+	position: absolute;
+	background-color: black;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+
+.dropdown-tab a {
+	float: none;
+	color: white;
+	padding: 12px 16px;
+	background-color: transparent;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+
+.dropdown-tab a:hover {
+	background-color: rgb(49, 49, 49);
+}
+
+.dropdown:hover .dropdown-tab {
+	display: block;
+}
+
+.Derma {
+	background-image: url(images/iseb1.jpg);
+	background-color: #5d5f61;
+	background-blend-mode: multiply;
+	height: 750px;
+	position: relative;
+	flex: none;
+	order: 3;
+	align-self: stretch;
+	flex-grow: 0;
+	z-index: 3;
+}
+
+.DermaSpect {
+	position: absolute;
+	width: 1045px;
+	height: 527px;
+	left: 100px;
+	top: 79px;
+	background: #546DA6;
+	border-radius: 15px;
+}
+
+.DermaDesc1 {
+	position: absolute;
+	width: 841px;
+	height: 117px;
+	left: 200px;
+	top: 547px;
+	background: #E4EAF0;
+	border-radius: 10px;
+	padding-bottom: 20px;
+
+	h1 {
+		display: flex;
+		justify-content: right;
+		align-items: center;
+		text-align: center;
+		font-size: 30px;
+		margin-right: 30px;
+	}
+}
+
+.DermaDesc2 {
+	position: absolute;
+	width: 319px;
+	height: 116px;
+	left: 200px;
+	top: 548px;
+	background: #BBC1C6;
+	border-radius: 10px;
+	padding-bottom: 20px;
+
+	h1 {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	place-items: center;
+}
+
+.box1 {
+	width: 375px;
+	height: 375px;
+	background: #465892;
+	border-radius: 15px;
+}
+
+.bottom {
+	margin-top: 50px;
+}
+
+.study {
+	margin-left: 20px;
+	margin-bottom: 50px;
+
+	h1 {
+		text-align: left;
+	}
+
+	p {
+		text-align: left;
+	}
+
+	.learn {
+		float: left;
+		background-color: #465892;
+		color: white;
+		border-radius: 15px;
+		border: none;
+		padding: 12px 20px;
+		font-family: 'Amiko';
+	}
+
+	.box2 {
+		width: 579px;
+		height: 522px;
+		border-radius: 20px;
+		background-color: #D9D9D9;
+	}
+}
+
+.col {
+	float: left;
+	width: 50%;
+	text-align: center;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+@media screen and (max-width: 650px) {
+	.col {
+		width: 100%;
+		display: block;
+	}
+}
+
+.change {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container {
+	height: 400px;
+	width: 1000px;
+	background-image: url("images/DV/dv_stock.png");
+	background-color: #968eafbf;
+	background-blend-mode: multiply;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 20px;
+	position: relative;
+	margin-bottom: 30px;
+
+	h1 {
+		text-align: left;
+		margin-left: 30px;
+		margin-top: 5px;
+		font-size: 50px;
+		color: white;
+	}
+
+	p {
+		text-align: left;
+		margin-left: 30px;
+		margin-bottom: 150px;
+		font-size: 20px;
+		color: white;
+	}
+
+	a {
+		background-color: #6d5593;
+		padding: 15px;
+		border: 2px solid white;
+		border-radius: 10px;
+		margin-left: 30px;;
+	}
+
+	img {
+		position: absolute;
+		bottom: 10px;
+		right: 10px;
+		width: 40px;
+		height: 40px;
+	}
+}
+
+.footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 20px;
+	background-color: #546da6;
+}
+
+.footer-left {
+	text-align: left;
+	padding: 0 20px;
+}
+
+.footer-right {
+	text-align: right;
+	padding: 0 20px;
+}
+
+.ftr {
+	border: none;
+	background-color: inherit;
+	padding: 5px 5px;
+	font-size: 10px;
+	font-family: "Amiko";
+	cursor: pointer;
+	display: inline-block;
+	color: white;
+}

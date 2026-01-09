@@ -1,0 +1,218 @@
+@import url(https://fonts.googleapis.com/css?family=Amiko);
+
+body {
+	font-family: "Amiko";
+	margin: 0;
+}
+
+.header {
+	background-image: url("images/dermavision_ssoe_winter_award.jpg");
+	background-color: #665d66;
+	background-blend-mode: multiply;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+
+	padding-bottom: 20px;
+}
+
+.topnav {
+	padding-top: 20px;
+	padding-bottom: 50px;
+
+	a {
+		float: right;
+		text-align: center;
+	}
+
+	a.split {
+		float: left;
+	}
+}
+
+h1 {
+	text-align: center;
+	padding-top: 20px;
+	position: relative;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 40px;
+}
+
+h2 {
+	text-align: center;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+p {
+	text-align: center;
+}
+
+a:link {
+	color: white;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #800080;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #b266b2;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+a {
+	padding-left: 10px;
+	padding-right: 20px;
+}
+
+.dropdown {
+	float: right;
+	overflow: hidden;
+}
+
+.dropbtn {
+	font-size: 16px;
+	border: none;
+	outline: none;
+	color: white;
+	padding-left: 10px;
+	padding-right: 20px;
+	padding-bottom: 50px;
+	background-color: inherit;
+	font-family: inherit;
+	float: right;
+	text-align: center;
+}
+
+.dropbtn:visited {
+	color: #800080;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+.dropbtn:hover {
+	color: #b266b2;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+.dropdown-tab {
+	display: none;
+	position: absolute;
+	background-color: black;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+
+.dropdown-tab a {
+	float: none;
+	color: white;
+	padding: 12px 16px;
+	background-color: transparent;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+
+.dropdown-tab a:hover {
+	background-color: rgb(49, 49, 49);
+}
+
+.dropdown:hover .dropdown-tab {
+	display: block;
+}
+
+.founders {
+	background-image: linear-gradient(to bottom, #a1b5d8, #f0f6ff);
+	padding-top: 20px;
+
+	h1 {
+		padding: 30px 0;
+	}
+	
+	.col {
+		float: left;
+		width: 25%;
+		margin-left: 42px;
+		margin-right: 42px;
+		margin-bottom: 50px;
+		padding: 0 8px;
+	}
+
+	.col2 {
+		float: left;
+		width: 20%;
+		margin-left: 22px;
+		margin-right: 22px;
+		margin-bottom: 16px;
+		padding: 0 8px;
+	}
+
+	@media screen and (max-width: 650px) {
+		.col, .col2 {
+			width: 100%;
+			display: block;
+		}
+	}
+
+	.row:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+	.card {
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+		background-color: #f0f6ff;
+	}
+
+	.container {
+		padding: 0 16px;
+	}
+
+	.container::after,
+	.row::after {
+		content: "";
+		clear: both;
+		display: table;
+	}
+
+	.title {
+		font-size: 20px;
+		font-style: italic;
+	}
+}
+
+.footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 50px;
+	background-color: #f0f6ff;
+}
+
+.footer-left {
+	text-align: left;
+	padding: 0 20px;
+}
+
+.footer-right {
+	text-align: right;
+	padding: 0 20px;
+}
+
+.ftr {
+	border: none;
+	background-color: inherit;
+	padding: 5px 5px;
+	font-size: 10px;
+	font-family: "Amiko";
+	cursor: pointer;
+	display: inline-block;
+}
