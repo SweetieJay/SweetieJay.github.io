@@ -1,280 +1,262 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Domestic Violence Help and Resources</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="helpandresources.css" />
-  </head>
+@import url(https://fonts.googleapis.com/css?family=Amiko);
+@import url(assets/fontawesome/css/solid.min.css);
+@import url(assets/fontawesome/css/fontawesome.min.css);
 
-  <header>
-    <nav>
-      <ul class="sidebar">
-        <li onclick="hideSidebar()">
-          <a href="#"><i class="fa-solid fa-xmark" style="font-size: 20px"></i></a>
-        </li>
-        <li><a href="company.html">Company</a></li>
-        <li><a href="meettheteam.html">About The Team</a></li>
-        <li><a href="technology.html">Technology</a></li>
-        <li><a href="opportunities.html">Opportunities</a></li>
-        <li><a href="supportus.html">Support Us</a></li>
-        <li><a href="contactus.html">Contact Us</a></li>
-        <li><a href="helpandresources.html">DV Help & Resources</a></li>
-      </ul>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-      <ul>
-        <li>
-          <a href="index.html"><img src="images/logos/DVT_logo_color_WHT.png" width="50px" height="50px" style="padding: 10px" />DermaVision</a>
-        </li>
-        <li class="dropdown hideOnMobile">
-          <a href="#" class="dropbtn">Company</a>
-          <div class="dropdown-tab">
-            <a href="company.html">Who We Are</a>
-            <a href="meettheteam.html">About The Team</a>
-          </div>
-        </li>
-        <li class="hideOnMobile"><a href="technology.html">Technology</a></li>
-        <li class="hideOnMobile">
-          <a href="opportunities.html">Opportunities</a>
-        </li>
-        <li class="hideOnMobile"><a href="supportus.html">Support Us</a></li>
-        <li class="hideOnMobile"><a href="contactus.html">Contact Us</a></li>
-        <li class="hideOnMobile">
-          <a href="helpandresources.html">DV Help & Resources</a>
-        </li>
-        <li class="menubutton" onclick="showSidebar()">
-          <a href="#"
-            ><i class="fa-solid fa-bars" style="font-size: 20px"></i
-          ></a>
-        </li>
-      </ul>
-    </nav>
+body {
+  font-family: "Amiko";
+  width: 100%;
+  height: 100vh;
+	background-color: #580158;
 
-    <h1 style="color: white; font-size: 40px;">Domestic Violence Resources</h1>
-    <div class="blurb">
-      <p style="color: white;">
-        If you or someone you know is experiencing domestic violence, contact
-        the <a href="https://www.thehotline.org/"><strong>National Domestic Violence Hotline</strong></a>
-        at<br />
-        <strong>1-800-799-7233/TTY: 1-800-787-3224</strong> or <strong>text "START" to 88788.</strong>
-      </p>
-    </div>
-  </header>
+  h1 {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+}
 
-  <hr />
+nav {
+  background-color: #665d6680;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 
-  <div class="report">
-		<h2>There are also other ways to report abuse:</h2>
-		<ul>
-			<li><strong>Contact the Victim Services Unit or Special Crimes Unit</strong> of your local police department, if these are available</li>
-			<li><strong>Call a domestic violence hotline</strong> to arrange a safe meeting with an officer at a shelter or support service</li>
-			<li><strong>Make a report directly</strong> at the hospital or police station</li>
-		</ul>
+  ul {
+		width: 100%;
+		list-style: none;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+	}
 
-		<p>
-			Remember, no one should have to face abuse alone. You deserve help, support,
-			and a way out — <strong>please don't hesitate to reach out.</strong>
-		</p>
-	</div>
+	li {
+		height: 50px;
+	}
 
-  <hr />
+	li:first-child {
+		margin-right: auto;
+	}
 
-  <div class="orgs" style="color: white;">
-    <h2>Local Domestic Violence Organizations</h2>
-		<p>
-			Domestic violence organizations offer a variety of services, no matter what your situation might be. 
-			You can reach out to 24/7 hotlines for immediate assistance, seek help with legal matters, or find safe and secure housing. 
-			These organizations are here to guide, support, and protect you every step of the way.
-			The following are a small collection of domestic violence organizations that exist in Southern California. 
-		</p>
+	a {
+		height: 100%;
+		padding: 0 30px;
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+		color: white;
+	}
 
-    <div class="container">
-      <div class="item">
-        <a href="https://www.adwas.org/"><div style="text-align: center;">
-          <img src="images/DV/adwas_logo.png" height="150"/></div></a>
-        <h4><a href="https://www.adwas.org/">Abused Deaf Women's Advocacy Services</a></h4>
-        <ul>
-          <li>Video phone (only for Deaf callers):</li>
-          <li>1-855-812-1001</li>
-        </ul>
-      </div>
+	a:hover {
+		color: #f0f0f0;
+	}
+}
 
-      <div class="item">
-        <a href="https://humanoptions.org/"><div style="text-align: center;">
-          <img src="images/DV/humanoptions_logo.png" height="150"/></div></a>
-        <h4><a href="https://humanoptions.org/">Human Options</a></h4>
-        <ul>
-          <li>Irvine, CA</li>
-          <li>877-854-3594</li>
-          <li>Emergency shelter and rapid re-housing</li>
-          <li>Legal advocacy</li>
-        </ul>
-      </div>
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
 
-      <div class="item">
-        <a href="https://www.peaceoverviolence.org/"><div style="text-align: center;">
-          <img src="images/DV/peaceoverviolence_logo.png" height="150"/></div></a>
-        <h4><a href="https://www.peaceoverviolence.org/">Peave Over Violence</a></h4>
-        <ul>
-          <li>Los Angeles, CA</li>
-          <li>213-626-3393 (Central Los Angeles)</li>
-          <li>310-392-8381 (South Los Angeles)</li>
-          <li>626-793-3385 (West San Gabriel Valley)</li>
-          <li>Deaf, disabled and elder services</li>
-          <li>English, Spanish, and ASL</li>
-        </ul>	
-      </div>
+	a, li {
+		width: 100%;
+	}
+}
 
-      <div class="item">
-        <a href="https://dvsolutions.org/"><div style="text-align: center;">
-          <img src="images/DV/dvs_logo.png" height="150"/></div></a>
-        <h4><a href="https://dvsolutions.org/">Domestic Violence Solutions</a></h4>
-        <ul>
-          <li>Santa Barbara, CA</li>
-          <li>805-964-5245</li>
-          <li>Emergency shelter and transitional housing</li>
-          <li>Job and life skills program</li>
-          <li>DV education groups</li>
-        </ul>	
-      </div>
+.menubutton {
+  display: none;
+}
 
-      <div class="item">
-        <a href="https://www.icfs.org"><div style="text-align: center;">
-          <img src="images/DV/icfs_logo.png" height="150"/></div></a>
-        <h4><a href="https://www.icfs.org">Interface Children & Family Services</a></h4>
-        <ul>
-          <li>Ventura, CA</li>
-          <li>800-636-6738</li>
-          <li>Safe 30-day shelter stay</li>
-          <li>Case management</li>
-        </ul>
-      </div>
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
 
-      <div class="item">
-        <a href="https://www.optionhouseinc.com"><div style="text-align: center;">
-          <img src="images/DV/optionhouse_logo.png" height="150"/></div></a>
-        <h4><a href="https://www.optionhouseinc.com">Option House, Inc.</a></h4>
-        <ul>
-          <li>San Bernardino, CA</li>
-          <li>909-381-3471</li>
-          <li>Emergency shelter</li>
-          <li>DV Restraining Orders</li>
-          <li>Support groups</li>
-        </ul>
-      </div>
+.dropdown-tab {
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+  z-index: 1;
 
-      <div class="item">
-        <a href="https://kcfjc.org/"><div style="text-align: center;">
-          <img src="images/DV/kcfjc_logo.png" height="150"/></div></a>
-        <h4><a href="https://kcfjc.org/">Family Justice Center</a></h4>
-        <ul>
-          <li>Kern, CA</li>
-          <li>661-868-5950</li>
-          <li>Crisis counseling</li>
-          <li>Clothing and food necessities</li>
-          <li>Hospital accompaniment</li>
-        </ul>
-      </div>
+	a {
+		color: white;
+		background-color: rgba(0, 0, 0, 0.5);
+		padding: 12px 16px;
+		text-decoration: none;
+		display: block;
+	}
+}
 
-      <div class="item">
-        <a href="https://www.ccssd.org"><div style="text-align: center;">
-          <img src="images/DV/ccs_logo.png" height="150"/></div></a>
-        <h4><a href="https://www.ccssd.org">Center for Community Solutions</a></h4>
-        <ul>
-          <li>San Diego, CA</li>
-          <li>888-385-4657</li>
-          <li>Project Safehouse</li>
-          <li>Counseling services</li>
-          <li>Legal services</li>
-        </ul>
-      </div>
+.dropdown:hover .dropdown-tab {
+  display: block;
+}
 
-      <div class="item">
-        <a href="https://womanhaven.org"><div style="text-align: center;">
-          <img src="images/DV/wh_logo.png" height="150"/></div></a>
-        <h4><a href="https://womanhaven.org">Woman Haven</a></h4>
-        <ul>
-          <li>Imperial, CA</li>
-          <li>760-353-8530</li>
-          <li>Housing programs</li>
-          <li>Wellness program</li>
-          <li>Thrift store</li>
-        </ul>	
-      </div>
-    </div>
-  </div>
+header {
+  height: fit-content;
+  background-color: #b266b2;
+  text-align: center;
 
-  <div style="text-align: center; margin: 20px;"><img src="images/DV/dv_stock.png" width="100%" alt=""/></div>
+	h1 {
+		margin-top: 5vh;
+		padding: 40px;
+	}
 
-  <div class="departments" style="color: white;">
-		<h2>SoCal Police Departments</h2>
-		<p>
-			If you or someone you know is in an abusive situation, reaching out to the police can be a critical step towards safety. 
-			Police officers can offer immediate protection or connect you with resources to help navigate you through difficult times. 
-			Below, you'll find a list of local Southern California police departments that you can contact for support. 
-			For help anywhere in California, here is a link to the <a href="https://post.ca.gov/le-agencies" target="_blank"><strong>Statewide Directory of Law Enforcement Agencies</strong>.</a>
-		</p>
+	p {
+		padding-bottom: 40px;
+	}
+}
 
-		<table style="width: 100%; color: white">
-			<tr>
-				<th>POLICE DEPARTMENT</th>
-				<th>GENERAL CONTACT</th>
-				<th>DV SPECIFIC</th>
-			</tr>
-			<tr>
-				<td><a href="https://www.cityofirvine.org/government/irvine-police-department" target="_blank">Irvine Police Department</a></td>
-				<td>949-724-7000</td>
-				<td>949-476-4855</td>
-			</tr>
-			<tr>
-				<td><a href="https://lasd.org/" target="_blank">LA County Sheriff's Department</a></td>
-				<td>213-229-1700</td>
-				<td>562-946-7960</td>
-			</tr>
-			<tr>
-				<td><a href="https://santabarbaraca.gov/government/departments/santa-barbara-police-department" target="_blank">Santa Barbara Police Department</a></td>
-				<td>805-882-8900</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td><a href="https://www.cityofventura.ca.gov/2267/Police" target="_blank">City of Ventura Police Department</a></td>
-				<td>805-339-4400</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td><a href="https://www.sbcity.org/city_hall/police_department target="_blank">San Bernardino Police Department</a></td>
-				<td>909-384-7272</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td><a href="https://riversideca.gov/rpd/" target="_blank">Riverside Police Department</a></td>
-				<td>951-826-5700</td>
-				<td>800-683-0829</td>
-			</tr>
-			<tr>
-				<td><a href="https://www.sandiego.gov/police" target="_blank">San Diego Police Department</a></td>
-				<td>619-531-2000</td>
-				<td>619-533-3500</td>
-			</tr>
-			<tr>
-				<td><a href="https://icso.imperialcounty.org/" target="_blank">Imperial County Sherrif's Department</a></td>
-				<td>442-265-2021</td>
-				<td></td>
-			</tr>
-		</table>
-	</div>
+.blurb a {
+	padding: 0;
+	text-decoration: underline;
+	color: white;
+}
 
-  <div class="footer">
-    <div class="footer-left">
-      <h6 style="color: white;">@ 2025 DermaVision Technologies, Inc. All Rights Reserved.</h6>
-    </div>
+.report {
+	color: white;
+	margin-left: 20px;
 
-    <div class="footer-right">
-      <a href="#" class="ftr">Privacy Policy</a>
-      <a href="#" class="ftr">Terms of Use</a>
-      <a href="#" class="ftr">Cookie Preferences</a>
-    </div>
-  </div>
+	h2 {
+		padding: 20px 0;
+	}
 
-  <script src="assets/nav.js"></script>
-</html>
+	ul {
+		margin-right: 40px;
+	}
+
+	li {
+		margin-left: 40px;
+		padding: 3px;
+	}
+
+	p {
+		padding: 20px 0;
+	}
+}
+
+.orgs {
+	h2 {
+		margin: 20px;
+	}
+
+	p {
+		margin: 20px;
+	}
+}
+
+.container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	text-align: center;
+	padding: 2rem;
+	margin: 2rem;
+	gap: 2rem;
+
+	a {
+		text-decoration: none;
+		color: white;
+		padding: 20px;
+	}
+
+	li {
+		list-style: none;
+	}
+}
+
+.departments {
+	margin: 20px;
+
+	h2 {
+		margin-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	p {
+		padding-bottom: 30px;
+	}
+
+	a {
+		padding: 0;
+		text-decoration: underline;
+		color: white;
+	}
+}
+
+table, th, td {
+	padding: 10px;
+	border-collapse: collapse;
+}
+
+th {
+	text-align: left;
+}
+
+tr:nth-child(odd) {
+	background-color: #b266b2;
+}
+
+.footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.footer-left {
+	text-align: left;
+	padding: 0 20px;
+}
+
+.footer-right {
+	text-align: right;
+	padding: 0 20px;
+
+  a {
+    color: white;
+		border: none;
+    background-color: inherit;
+    text-decoration: none;
+    padding: 5px 5px;
+    font-size: 10px;
+    cursor: pointer;
+    display: inline-block;
+  }
+}
+
+
+@media (max-width: 800px) {
+  .hideOnMobile {
+    display: none;
+  }
+
+  .menubutton {
+    display: block;
+  }
+
+	.container {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (max-width: 400px) {
+  .sidebar {
+    width: 100%;
+  }
+
+	.container {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
