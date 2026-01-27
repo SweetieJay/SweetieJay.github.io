@@ -7,37 +7,63 @@
     <link rel="stylesheet" href="helpandresources.css" />
   </head>
 
-  <div class="header" style="color: white">
-    <div class="topnav" style="color: white">
-      <a href="index.html" class="split">DermaVision</a>
-      <a href="helpandresources.html">DV Help & Resources</a>
-      <a href="contactus.html">Contact Us</a>
-      <a href="supportus.html">Support Us</a>
-      <a href="opportunities.html">Opportunities</a>
-      <a href="technology.html">Technology</a>
-      <div class="dropdown">
-        <button class="dropbtn">Company</button>
-        <div class="dropdown-tab">
-          <a href="company.html">Who We Are</a>
-          <a href="meettheteam.html">About The Team</a>
-        </div>
-      </div>
-    </div>
+  <header>
+    <nav>
+      <ul class="sidebar">
+        <li onclick="hideSidebar()">
+          <a href="#"><i class="fa-solid fa-xmark" style="font-size: 20px"></i></a>
+        </li>
+        <li><a href="company.html">Company</a></li>
+        <li><a href="meettheteam.html">About The Team</a></li>
+        <li><a href="technology.html">Technology</a></li>
+        <li><a href="opportunities.html">Opportunities</a></li>
+        <li><a href="supportus.html">Support Us</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+        <li><a href="helpandresources.html">DV Help & Resources</a></li>
+      </ul>
 
-    <h1>Domestic Violence Resources</h1>
+      <ul>
+        <li>
+          <a href="index.html"><img src="images/logos/DVT_logo_color_WHT.png" width="50px" height="50px" style="padding: 10px" />DermaVision</a>
+        </li>
+        <li class="dropdown hideOnMobile">
+          <a href="#" class="dropbtn">Company</a>
+          <div class="dropdown-tab">
+            <a href="company.html">Who We Are</a>
+            <a href="meettheteam.html">About The Team</a>
+          </div>
+        </li>
+        <li class="hideOnMobile"><a href="technology.html">Technology</a></li>
+        <li class="hideOnMobile">
+          <a href="opportunities.html">Opportunities</a>
+        </li>
+        <li class="hideOnMobile"><a href="supportus.html">Support Us</a></li>
+        <li class="hideOnMobile"><a href="contactus.html">Contact Us</a></li>
+        <li class="hideOnMobile">
+          <a href="helpandresources.html">DV Help & Resources</a>
+        </li>
+        <li class="menubutton" onclick="showSidebar()">
+          <a href="#"
+            ><i class="fa-solid fa-bars" style="font-size: 20px"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+
+    <h1 style="color: white; font-size: 40px;">Domestic Violence Resources</h1>
     <div class="blurb">
-      <p>
+      <p style="color: white;">
         If you or someone you know is experiencing domestic violence, contact
         the <a href="https://www.thehotline.org/"><strong>National Domestic Violence Hotline</strong></a>
         at<br />
         <strong>1-800-799-7233/TTY: 1-800-787-3224</strong> or <strong>text "START" to 88788.</strong>
       </p>
     </div>
-  </div>
+  </header>
 
   <hr />
 
-	<div class="report">
+  <div class="report">
 		<h2>There are also other ways to report abuse:</h2>
 		<ul>
 			<li><strong>Contact the Victim Services Unit or Special Crimes Unit</strong> of your local police department, if these are available</li>
@@ -51,10 +77,10 @@
 		</p>
 	</div>
 
-	<hr />
+  <hr />
 
-	<div class="orgs" style="color: white;">
-		<h2>Local Domestic Violence Organizations</h2>
+  <div class="orgs" style="color: white;">
+    <h2>Local Domestic Violence Organizations</h2>
 		<p>
 			Domestic violence organizations offer a variety of services, no matter what your situation might be. 
 			You can reach out to 24/7 hotlines for immediate assistance, seek help with legal matters, or find safe and secure housing. 
@@ -62,143 +88,125 @@
 			The following are a small collection of domestic violence organizations that exist in Southern California. 
 		</p>
 
-		<div class="container">
-			<div class="row">
-				<div class="col">
-					<a href="https://www.adwas.org/"><div style="text-align: center;">
-						<img src="images/DV/adwas_logo.png" height="150"/>
-					</div></a>
-					<h4><a href="https://www.adwas.org/">Abused Deaf Women's Advocacy Services</a></h4>
-						<ul>
-							<li>Video phone (only for Deaf callers): 1-855-812-1001</li>
-						</ul>	
-				</div>
+    <div class="container">
+      <div class="item">
+        <a href="https://www.adwas.org/"><div style="text-align: center;">
+          <img src="images/DV/adwas_logo.png" height="150"/></div></a>
+        <h4><a href="https://www.adwas.org/">Abused Deaf Women's Advocacy Services</a></h4>
+        <ul>
+          <li>Video phone (only for Deaf callers):</li>
+          <li>1-855-812-1001</li>
+        </ul>
+      </div>
 
-				<div class="col">
-					<a href="https://humanoptions.org/"><div style="text-align: center;">
-						<img src="images/DV/humanoptions_logo.png" height="150"/>
-					</div></a>
-					<h4><a href="https://humanoptions.org/">Human Options</a></h4>
-						<ul>
-							<li>Irvine, CA</li>
-							<li>877-854-3594</li>
-							<li>Emergency shelter and rapid re-housing</li>
-							<li>Legal advocacy</li>
-						</ul>
-				</div>
+      <div class="item">
+        <a href="https://humanoptions.org/"><div style="text-align: center;">
+          <img src="images/DV/humanoptions_logo.png" height="150"/></div></a>
+        <h4><a href="https://humanoptions.org/">Human Options</a></h4>
+        <ul>
+          <li>Irvine, CA</li>
+          <li>877-854-3594</li>
+          <li>Emergency shelter and rapid re-housing</li>
+          <li>Legal advocacy</li>
+        </ul>
+      </div>
 
-				<div class="col">
-					<a href="https://www.peaceoverviolence.org/"><div style="text-align: center;">
-						<img src="images/DV/peaceoverviolence_logo.png" height="150" alt="" />
-					</div></a>
-					<h4><a href="https://www.peaceoverviolence.org/">Peace Over Violence</a></h4>
-						<ul>
-							<li>Los Angeles, CA</li>
-							<li>213-626-3393 (Central Los Angeles)</li>
-							<li>310-392-8381 (South Los Angeles)</li>
-							<li>626-793-3385 (West San Gabriel Valley)</li>
-							<li>Deaf, disabled and elder services</li>
-							<li>English, Spanish, and ASL</li>
-						</ul>										
-				</div>
-			</div>
-		</div>
+      <div class="item">
+        <a href="https://www.peaceoverviolence.org/"><div style="text-align: center;">
+          <img src="images/DV/peaceoverviolence_logo.png" height="150"/></div></a>
+        <h4><a href="https://www.peaceoverviolence.org/">Peave Over Violence</a></h4>
+        <ul>
+          <li>Los Angeles, CA</li>
+          <li>213-626-3393 (Central Los Angeles)</li>
+          <li>310-392-8381 (South Los Angeles)</li>
+          <li>626-793-3385 (West San Gabriel Valley)</li>
+          <li>Deaf, disabled and elder services</li>
+          <li>English, Spanish, and ASL</li>
+        </ul>	
+      </div>
 
-		<div class="container">
-			<div class="row">
-				<div class="col">
-					<a href="https://dvsolutions.org/"><div style="text-align: center;">
-						<img src="images/DV/dvs_logo.png" height="150"/>
-					</div></a>
-					<h4><a href="https://dvsolutions.org/">Domestic Violence Solutions</a></h4>
-						<ul>
-							<li>Santa Barbara, CA</li>
-							<li>805-964-5245</li>
-							<li>Emergency shelter and transitional housing</li>
-							<li>Job and life skills program</li>
-							<li>DV education groups</li>
-						</ul>		
-				</div>
+      <div class="item">
+        <a href="https://dvsolutions.org/"><div style="text-align: center;">
+          <img src="images/DV/dvs_logo.png" height="150"/></div></a>
+        <h4><a href="https://dvsolutions.org/">Domestic Violence Solutions</a></h4>
+        <ul>
+          <li>Santa Barbara, CA</li>
+          <li>805-964-5245</li>
+          <li>Emergency shelter and transitional housing</li>
+          <li>Job and life skills program</li>
+          <li>DV education groups</li>
+        </ul>	
+      </div>
 
-				<div class="col">
-					<a href="https://www.icfs.org"><div style="text-align: center;">
-						<img src="images/DV/icfs_logo.png" height="150" alt="" />
-					</div></a>
-					<h4><a href="https://www.icfs.org">Interface Children & Family Services</a></h4>
-						<ul>
-							<li>Ventura, CA</li>
-							<li>800-636-6738</li>
-							<li>Safe 30-day shelter stay</li>
-							<li>Case management</li>
-						</ul>
-				</div>
+      <div class="item">
+        <a href="https://www.icfs.org"><div style="text-align: center;">
+          <img src="images/DV/icfs_logo.png" height="150"/></div></a>
+        <h4><a href="https://www.icfs.org">Interface Children & Family Services</a></h4>
+        <ul>
+          <li>Ventura, CA</li>
+          <li>800-636-6738</li>
+          <li>Safe 30-day shelter stay</li>
+          <li>Case management</li>
+        </ul>
+      </div>
 
-				<div class="col">
-					<a href="https://www.optionhouseinc.com"><div style="text-align: center;">
-						<img src="images/DV/optionhouse_logo.png" height="150" alt="" />
-					</div></a>
-					<h4><a href="https://www.optionhouseinc.com">Option House, Inc.</a></h4>
-						<ul>
-							<li>San Bernardino, CA</li>
-							<li>909-381-3471</li>
-							<li>Emergency shelter</li>
-							<li>DV Restraining Orders</li>
-							<li>Support groups</li>
-						</ul>										
-				</div>
-			</div>
-		</div>
+      <div class="item">
+        <a href="https://www.optionhouseinc.com"><div style="text-align: center;">
+          <img src="images/DV/optionhouse_logo.png" height="150"/></div></a>
+        <h4><a href="https://www.optionhouseinc.com">Option House, Inc.</a></h4>
+        <ul>
+          <li>San Bernardino, CA</li>
+          <li>909-381-3471</li>
+          <li>Emergency shelter</li>
+          <li>DV Restraining Orders</li>
+          <li>Support groups</li>
+        </ul>
+      </div>
 
-		<div class="container">
-			<div class="row">
-				<div class="col">
-					<a href="https://kcfjc.org/"><div style="text-align: center;">
-						<img src="images/DV/kcfjc_logo.png" height="150"/>
-					</div></a>
-					<h4><a href="https://kcfjc.org/">Family Justice Center</a></h4>
-						<ul>
-							<li>Kern, CA</li>
-							<li>661-868-5950</li>
-							<li>Crisis counseling</li>
-							<li>Clothing and food necessities</li>
-							<li>Hospital accompaniment</li>
-						</ul>	
-				</div>
+      <div class="item">
+        <a href="https://kcfjc.org/"><div style="text-align: center;">
+          <img src="images/DV/kcfjc_logo.png" height="150"/></div></a>
+        <h4><a href="https://kcfjc.org/">Family Justice Center</a></h4>
+        <ul>
+          <li>Kern, CA</li>
+          <li>661-868-5950</li>
+          <li>Crisis counseling</li>
+          <li>Clothing and food necessities</li>
+          <li>Hospital accompaniment</li>
+        </ul>
+      </div>
 
-				<div class="col">
-					<a href="https://www.ccssd.org"><div style="text-align: center;">
-						<img src="images/DV/ccs_logo.png" height="150"/>
-					</div></a>
-					<h4><a href="https://www.ccssd.org">Center for Community Solutions</a></h4>
-						<ul>
-							<li>San Diego, CA</li>
-							<li>888-385-4657</li>
-							<li>Project Safehouse</li>
-							<li>Counseling services</li>
-							<li>Legal services</li>
-						</ul>
-				</div>
+      <div class="item">
+        <a href="https://www.ccssd.org"><div style="text-align: center;">
+          <img src="images/DV/ccs_logo.png" height="150"/></div></a>
+        <h4><a href="https://www.ccssd.org">Center for Community Solutions</a></h4>
+        <ul>
+          <li>San Diego, CA</li>
+          <li>888-385-4657</li>
+          <li>Project Safehouse</li>
+          <li>Counseling services</li>
+          <li>Legal services</li>
+        </ul>
+      </div>
 
-				<div class="col">
-					<a href="https://womanhaven.org"><div style="text-align: center;">
-						<img src="images/DV/wh_logo.png" height="150"/>
-					</div></a>
-					<h4><a href="https://womanhaven.org">Woman Haven</a></h4>
-						<ul>
-							<li>Imperial, CA</li>
-							<li>760-353-8530</li>
-							<li>Housing programs</li>
-							<li>Wellness program</li>
-							<li>Thrift store</li>
-						</ul>										
-				</div>
-			</div>
-		</div>
-	</div>
+      <div class="item">
+        <a href="https://womanhaven.org"><div style="text-align: center;">
+          <img src="images/DV/wh_logo.png" height="150"/></div></a>
+        <h4><a href="https://womanhaven.org">Woman Haven</a></h4>
+        <ul>
+          <li>Imperial, CA</li>
+          <li>760-353-8530</li>
+          <li>Housing programs</li>
+          <li>Wellness program</li>
+          <li>Thrift store</li>
+        </ul>	
+      </div>
+    </div>
+  </div>
 
-	<div style="text-align: center;"><img src="images/DV/dv_stock.png" width="100%" alt=""/></div>
+  <div style="text-align: center; margin: 20px;"><img src="images/DV/dv_stock.png" width="100%" alt=""/></div>
 
-	<div class="departments" style="color: white;">
+  <div class="departments" style="color: white;">
 		<h2>SoCal Police Departments</h2>
 		<p>
 			If you or someone you know is in an abusive situation, reaching out to the police can be a critical step towards safety. 
@@ -207,7 +215,7 @@
 			For help anywhere in California, here is a link to the <a href="https://post.ca.gov/le-agencies" target="_blank"><strong>Statewide Directory of Law Enforcement Agencies</strong>.</a>
 		</p>
 
-		<table style="width: 100%;">
+		<table style="width: 100%; color: white">
 			<tr>
 				<th>POLICE DEPARTMENT</th>
 				<th>GENERAL CONTACT</th>
@@ -256,16 +264,17 @@
 		</table>
 	</div>
 
-	<div class="footer" style="color: white;">
-		<div class="footer-left">
-			<h6>@ 2025 DermaVision Technologies, Inc. All Rights Reserved.</h6>
-		</div>
+  <div class="footer">
+    <div class="footer-left">
+      <h6 style="color: white;">@ 2025 DermaVision Technologies, Inc. All Rights Reserved.</h6>
+    </div>
 
-		<div class="footer-right">
-			<button class="ftr privacy" style="color: white;">Privacy Policy</button>
-			<button class="ftr terms" style="color: white;">Terms of Use</button>
-			<button class="ftr cookies" style="color: white;">Cookie Preferences</button>
-		</div>
-	</div>
+    <div class="footer-right">
+      <a href="#" class="ftr">Privacy Policy</a>
+      <a href="#" class="ftr">Terms of Use</a>
+      <a href="#" class="ftr">Cookie Preferences</a>
+    </div>
+  </div>
 
+  <script src="assets/nav.js"></script>
 </html>
