@@ -7,32 +7,46 @@
     <link rel="stylesheet" href="index.css" />
   </head>
 
-  <div class="header" style="color: white">
-    <div class="topnav" style="color: white">
-      <a href="index.html" class="split">DermaVision</a>
-      <a href="helpandresources.html">DV Help & Resources</a>
-      <a href="contactus.html">Contact Us</a>
-      <a href="supportus.html">Support Us</a>
-      <a href="opportunities.html">Opportunities</a>
-      <a href="technology.html">Technology</a>
-      <div class="dropdown">
-        <button class="dropbtn">Company</button>
-        <div class="dropdown-tab">
-          <a href="company.html">Who We Are</a>
-          <a href="meettheteam.html">About The Team</a>
-        </div>
-      </div>
-    </div>
+  <header>
+    <nav>
+      <ul class="sidebar">
+        <li onclick=hideSidebar()><a href="#"><i class="fa-solid fa-xmark" style="font-size: 20px;"></i></a></li>
+        <li><a href="company.html">Company</a></li>
+        <li><a href="meettheteam.html">About The Team</a></li>
+        <li><a href="technology.html">Technology</a></li>
+        <li><a href="opportunities.html">Opportunities</a></li>
+        <li><a href="supportus.html">Support Us</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+        <li><a href="helpandresources.html">DV Help & Resources</a></li>
+      </ul>
 
-    <h1 style="color: white">Empowering Equitable Imaging Solutions</h1>
-    <p style="color: white">Reach out at dermavision@gmail.com</p>
+      <ul>
+        <li><a href="index.html"><img src="images/logos/DVT_logo_color_WHT.png" width="30" height="30" style="padding: 10px;">DermaVision</a></li>
+        <li class="dropdown hideOnMobile">
+          <a href="#" class="dropbtn">Company</a>
+          <div class="dropdown-tab">
+            <a href="company.html">Who We Are</a>
+            <a href="meettheteam.html">About The Team</a>
+          </div>
+        </li>
+        <li class="hideOnMobile"><a href="technology.html">Technology</a></li>
+        <li class="hideOnMobile"><a href="opportunities.html">Opportunities</a></li>
+        <li class="hideOnMobile"><a href="supportus.html">Support Us</a></li>
+        <li class="hideOnMobile"><a href="contactus.html">Contact Us</a></li>
+        <li class="hideOnMobile"><a href="helpandresources.html">DV Help & Resources</a></li>
+        <li class="menubutton" onclick=showSidebar()><a href="#"><i class="fa-solid fa-bars" style="font-size: 20px;"></i></a></li>
+      </ul>
+    </nav>
+
+    <h1 style="color: white; font-size: 40px;">Empowering Equitable Imaging Solutions</h1>
+    <p style="color: white;"><strong>Reach out at dermavision@gmail.com</strong></p>
 
     <div class="DermaSpect" style="text-align: center">
       <a href="technology.html">Explore the DermaSpect</a>
     </div>
-  </div>
+  </header>
 
-  <h1>The DermaVision Core Values</h1>
+  <h1 style="padding: 5vh;">The DermaVision Core Values</h1>
 
   <div class="core">
     <button class="btn">
@@ -68,9 +82,10 @@
   </div>
 
   <div class="theteam">
-    <img src="images/team25.jpg" style="float: left; height: 400" />
-    <h1>Meet the Team</h1>
-    <a href="#meettheteam.html"><strong>Get to know the magnificent minds behind the company</strong></a>
+    <div class="shape" style="float: left"></div>
+    <h2 style="font-size: 40px;">Meet the Team</h2>
+    <p><strong>Get to know the magnificent minds behind the company.</strong></p>
+    <a href="meettheteam.html" style="text-align: center">The Team</a>
   </div>
 
   <h1>Newsroom</h1>
@@ -123,7 +138,7 @@
 
     <ul>
       <li style="color: white;">Find Us</li>
-      <li><a href="#" class="fa fa-twitter"></a> <a href="#" class="fa fa-linkedin"></a></li>
+      <li><a href="#" class="fa-brands fa-square-x-twitter"></a> <a href="https://www.linkedin.com/company/dermavision-technologies" class="fa-brands fa-square-linkedin"></a></li>
     </ul>
   </div>
 
@@ -133,11 +148,11 @@
     </div>
 
     <div class="footer-right">
-      <button class="ftr privacy">Privacy Policy</button>
-      <button class="ftr terms">Terms of Use</button>
-      <button class="ftr cookies">Cookie Preferences</button>
+      <a href="#" class="ftr">Privacy Policy</a>
+      <a href="#" class="ftr">Terms of Use</a>
+      <a href="#" class="ftr">Cookie Preferences</a>
     </div>
   </div>
+
+  <script src="assets/nav.js"></script>
 </html>
-
-
