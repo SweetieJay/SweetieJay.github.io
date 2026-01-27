@@ -7,81 +7,79 @@
     <link rel="stylesheet" href="supportus.css" />
   </head>
 
-  <div class="header" style="color: white">
-    <div class="topnav" style="color: white">
-      <a href="index.html" class="split">DermaVision</a>
-      <a href="helpandresources.html">DV Help & Resources</a>
-      <a href="contactus.html">Contact Us</a>
-      <a href="supportus.html">Support Us</a>
-      <a href="opportunities.html">Opportunities</a>
-      <a href="technology.html">Technology</a>
-      <div class="dropdown">
-        <button class="dropbtn">Company</button>
-        <div class="dropdown-tab">
-          <a href="company.html">Who We Are</a>
-          <a href="meettheteam.html">About The Team</a>
-        </div>
-      </div>
-    </div>
+  <header>
+    <nav>
+      <ul class="sidebar">
+        <li onclick="hideSidebar()">
+          <a href="#"><i class="fa-solid fa-xmark" style="font-size: 20px"></i></a>
+        </li>
+        <li><a href="company.html">Company</a></li>
+        <li><a href="meettheteam.html">About The Team</a></li>
+        <li><a href="technology.html">Technology</a></li>
+        <li><a href="opportunities.html">Opportunities</a></li>
+        <li><a href="supportus.html">Support Us</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+        <li><a href="helpandresources.html">DV Help & Resources</a></li>
+      </ul>
 
-    <div class="header">
-      <h1 style="color: #a1b5d8">Support Us</h1>
-      <p>Reach out at dermavision@gmail.com</p>
-      <p style="font-size: 70%">
-        idk lorem ipsum "Lorem ipsum dolor sit amet, consectetur adipiscing
-        elit,<br />
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-        enim<br />
-        ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-        aliquip<br />
-        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in<br />
-        voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-        Excepteur<br />
-        sint occaecat cupidatat non proident, sunt in culpa qui officia
-        deserunt<br />
-        mollit anim id est laborum."<br />
-      </p>
-    </div>
-  </div>
+      <ul>
+        <li>
+          <a href="index.html"><img src="images/logos/DVT_logo_color_WHT.png" width="50px" height="50px" style="padding: 10px" />DermaVision</a>
+        </li>
+        <li class="dropdown hideOnMobile">
+          <a href="#" class="dropbtn">Company</a>
+          <div class="dropdown-tab">
+            <a href="company.html">Who We Are</a>
+            <a href="meettheteam.html">About The Team</a>
+          </div>
+        </li>
+        <li class="hideOnMobile"><a href="technology.html">Technology</a></li>
+        <li class="hideOnMobile">
+          <a href="opportunities.html">Opportunities</a>
+        </li>
+        <li class="hideOnMobile"><a href="supportus.html">Support Us</a></li>
+        <li class="hideOnMobile"><a href="contactus.html">Contact Us</a></li>
+        <li class="hideOnMobile">
+          <a href="helpandresources.html">DV Help & Resources</a>
+        </li>
+        <li class="menubutton" onclick="showSidebar()">
+          <a href="#"
+            ><i class="fa-solid fa-bars" style="font-size: 20px"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+
+    <h1 style="color: white; font-size: 40px;">Support Us</h1>
+    <p style="color: white">Please consider supporting us in the following ways!</p>
+  </header>
 
   <div class="linkedin">
-    <div class="linkedinbox"></div>
-    <div class="backbox">
-      <h1>Visit Our LinkedIn</h1>
-      <p>
-        <strong>At DermaVision Technologies, we develop novel and equitable imaging
-        solutions to advance the frontier of medical diagnostics for all.</strong>
-      </p>
+    <div class="linkedinbox">
+      <img src="images/linkedin.png">
+      <div class="backbox">
+        <h1>Visit Our LinkedIn</h1>
+        <p>
+          <strong>At DermaVision Technologies, we develop novel and equitable imaging
+          solutions to advance the frontier of medical diagnostics for all.</strong>
+        </p>
 
-      <p>
-        <strong>We're committed to developing these solutions for pressing needs relating to
-        medical diagnostics. If you're interested in our work, we hope that you
-        give us a follow and join us on our journey to push the frontier of
-        medicine and healthcare equity!</strong>
-      </p>
+        <p>
+          <strong>We're committed to developing these solutions for pressing needs relating to
+          medical diagnostics. If you're interested in our work, we hope that you
+          give us a follow and join us on our journey to push the frontier of
+          medicine and healthcare equity!</strong>
+        </p>
 
-      <a href="https://www.linkedin.com/company/dermavision-technologies" class="fa fa-linkedin"></a>
+        <a href="https://www.linkedin.com/company/dermavision-technologies" class="fa-brands fa-square-linkedin"></a>
+      </div>
     </div>
   </div>
 
-  <div class="donation" style="color: antiquewhite">
+  <div class="donation" style="color: white">
     <form action="action_page.php">
-      <h1>Donate Now</h1>
-      <p>Every donation helps!</p>
-      <p style="font-size: 70%">
-        idk lorem ipsum "Lorem ipsum dolor sit amet, consectetur adipiscing
-        elit,<br />
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-        enim<br />
-        ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-        aliquip<br />
-        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in<br />
-        voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-        Excepteur<br />
-        sint occaecat cupidatat non proident, sunt in culpa qui officia
-        deserunt<br />
-        mollit anim id est laborum."<br />
-      </p>
+      <h1 style="font-size: 40px;">Donate Now</h1>
+      <h2>Every donation helps!</h2>
 
       <div class="btncontainer">
         <button class="btn one">$1</button>
@@ -95,7 +93,7 @@
         <input type="submit" value="Submit" />
       </div>
 
-      <h1>Thank You</h1>
+      <h1 style="font-size: 40px;">Thank You</h1>
       <p>
         To inquire about formal investments or support us in other ways, <br />
         please reach out to us at contact@dermavisiontech.com.<br />
@@ -104,48 +102,28 @@
   </div>
 
   <div class="merch">
-    <div class="row">
-      <div class="col">
-        <h1>Our Merchandise</h1>
-        <p>All of the proceeds go to advancing our mission!</p>
-        <p>
-          idk lorem ipsum "Lorem ipsum dolor sit amet, consectetur adipiscing
-          elit,<br />
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Ut<br />
-          enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-          ut<br />
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit<br />
-          in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-          Excepteur<br />
-          sint occaecat cupidatat non proident, sunt in culpa qui officia
-          deserunt<br />
-          mollit anim id est laborum."<br />
-        </p>
-        <button class="merchbtn">Browse Merch</button>
-      </div>
-
-      <div class="col">
-        <img
-          src="images/merchandise.jpg"
-          alt="DermaVision Polo"
-          style="width: 350px; height: 350px"
-        />
-      </div>
+    <div class="item">
+      <h1 style="font-size: 40px;">Our Merchandise</h1>
+      <p>All of the proceeds go to advancing our mission!</p>
+      <a href="#">Browse Merch</a>
+    </div>
+    
+    <div class="item">
+      <img src="images/merchandise.jpg" style="width: 350px; height: 350px">
     </div>
   </div>
 
   <div class="footer">
     <div class="footer-left">
-      <h6>@ 2025 DermaVision Technologies, Inc. All Rights Reserved.</h6>
+      <h6 style="color: black;">@ 2025 DermaVision Technologies, Inc. All Rights Reserved.</h6>
     </div>
 
     <div class="footer-right">
-      <button class="ftr privacy">Privacy Policy</button>
-      <button class="ftr terms">Terms of Use</button>
-      <button class="ftr cookies">Cookie Preferences</button>
+      <a href="#" class="ftr">Privacy Policy</a>
+      <a href="#" class="ftr">Terms of Use</a>
+      <a href="#" class="ftr">Cookie Preferences</a>
     </div>
   </div>
-</html>
 
+  <script src="assets/nav.js"></script>
+</html>
