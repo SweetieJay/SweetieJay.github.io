@@ -7,136 +7,242 @@
     <link rel="stylesheet" href="company.css" />
   </head>
 
-  <div class="header" style="color: white">
-    <div class="topnav" style="color: white">
-      <a href="index.html" class="split">DermaVision</a>
-      <a href="helpandresources.html">DV Help & Resources</a>
-      <a href="contactus.html">Contact Us</a>
-      <a href="supportus.html">Support Us</a>
-      <a href="opportunities.html">Opportunities</a>
-      <a href="technology.html">Technology</a>
-      <div class="dropdown">
-        <button class="dropbtn">Company</button>
-        <div class="dropdown-tab">
-          <a href="company.html">Who We Are</a>
-          <a href="meettheteam.html">About The Team</a>
+  <header>
+    <nav>
+      <ul class="sidebar">
+        <li onclick="hideSidebar()">
+          <a href="#"><i class="fa-solid fa-xmark" style="font-size: 20px"></i></a>
+        </li>
+        <li><a href="company.html">Company</a></li>
+        <li><a href="meettheteam.html">About The Team</a></li>
+        <li><a href="technology.html">Technology</a></li>
+        <li><a href="opportunities.html">Opportunities</a></li>
+        <li><a href="supportus.html">Support Us</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+        <li><a href="helpandresources.html">DV Help & Resources</a></li>
+      </ul>
+
+      <ul>
+        <li>
+          <a href="index.html"><img src="images/logos/DVT_logo_color_WHT.png" width="30" height="30" style="padding: 10px" />DermaVision</a>
+        </li>
+        <li class="dropdown hideOnMobile">
+          <a href="#" class="dropbtn">Company</a>
+          <div class="dropdown-tab">
+            <a href="company.html">Who We Are</a>
+            <a href="meettheteam.html">About The Team</a>
+          </div>
+        </li>
+        <li class="hideOnMobile"><a href="technology.html">Technology</a></li>
+        <li class="hideOnMobile">
+          <a href="opportunities.html">Opportunities</a>
+        </li>
+        <li class="hideOnMobile"><a href="supportus.html">Support Us</a></li>
+        <li class="hideOnMobile"><a href="contactus.html">Contact Us</a></li>
+        <li class="hideOnMobile">
+          <a href="helpandresources.html">DV Help & Resources</a>
+        </li>
+        <li class="menubutton" onclick="showSidebar()">
+          <a href="#"
+            ><i class="fa-solid fa-bars" style="font-size: 20px"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+
+    <h1 style="color: white; font-size: 40px">Our Mission</h1>
+    <p style="color: white"><strong>Project Pitch</strong></p>
+  </header>
+
+  <div class="container">
+    <div class="center">
+      <div class="team">
+        <h1 style="font-size: 40px;"><strong>Founding Team</strong></h1>
+        <div class="profiles">
+          <div class="pro">
+            <div class="card">
+              <div class="head">
+                <img src="images/headshots/matthew_lo.jpeg" />
+                <div class="name">Matthew Lo</div>
+              </div>
+
+              <div class="content">
+                <div class="role">CEO</div>
+                M.ENG. Biomedical Engineering (UCI), B.S. Biomedical Engineering: Premed (UCI)
+              </div>
+
+              <div class="icons">
+                <a href="#"><i class="fa-brands fa-square-linkedin fa-2x"></i></a>
+                <a href="#"><i class="fa-solid fa-envelope fa-2x"></i></a>
+              </div>
+            </div>
+
+            <img src="images/headshots/matthew_lo.jpeg" id="picture"/>
+            <div class="details"><strong>Matthew Lo</strong>
+              <span>CEO</span>
+            </div>
+          </div>
+
+          <div class="pro">
+            <div class="card">
+              <div class="head">
+                <img src="images/headshots/Alejandra_Reyes_Chavoya.jpg" />
+                <div class="name">Alejandra Reyes</div>
+              </div>
+
+              <div class="content">
+                <div class="role">CFO</div>
+                B.S. Biomedical Engineering (UCI)
+              </div>
+
+              <div class="icons">
+                <a href="#"><i class="fa-brands fa-square-linkedin fa-2x"></i></a>
+                <a href="#"><i class="fa-solid fa-envelope fa-2x"></i></a>
+              </div>
+            </div>
+
+            <img src="images/headshots/Alejandra_Reyes_Chavoya.jpg" id="picture"/>
+            <div class="details"><strong>Alejandra Reyes</strong>
+              <span>CFO</span>
+            </div>
+          </div>
+
+          <div class="pro">
+            <div class="card">
+              <div class="head">
+                <img src="images/headshots/gerald_lee.png" />
+                <div class="name">Gerald Lee</div>
+              </div>
+
+              <div class="content">
+                <div class="role">Secretary</div>
+                Data Science Ph.D. Student (UW Seattle), B.S. Biomedical Engineering (UCI)
+              </div>
+
+              <div class="icons">
+                <a href="#"><i class="fa-brands fa-square-linkedin fa-2x"></i></a>
+                <a href="#"><i class="fa-solid fa-envelope fa-2x"></i></a>
+              </div>
+            </div>
+
+            <img src="images/headshots/gerald_lee.png" id="picture"/>
+            <div class="details"><strong>Gerald Lee</strong>
+              <span>Secretary</span>
+            </div>
+          </div>
+
+          <div class="pro">
+            <div class="card">
+              <div class="head">
+                <img src="images/headshots/siana_jv.jpg" />
+                <div class="name">Siana Jimenez-Vences</div>
+              </div>
+
+              <div class="content">
+                <div class="role">Co-Founder</div>
+                M.ENG. Biomedical Engineering (UCI), B.S. Biomedical Engineering (UCI)
+              </div>
+
+              <div class="icons">
+                <a href="#"><i class="fa-brands fa-square-linkedin fa-2x"></i></a>
+                <a href="#"><i class="fa-solid fa-envelope fa-2x"></i></a>
+              </div>
+            </div>
+
+            <img src="images/headshots/siana_jv.jpg" id="picture"/>
+            <div class="details"><strong>Siana Jimenez-Vences</strong>
+              <span>Co-Founder</span>
+            </div>
+          </div>
+
+          <div class="pro">
+            <div class="card">
+              <div class="head">
+                <img src="images/headshots/jessica_lam.jpg" />
+                <div class="name">Jessica Lam</div>
+              </div>
+
+              <div class="content">
+                <div class="role">Co-Founder</div>
+                B.S. Biomedical Engineering (UCI)
+              </div>
+
+              <div class="icons">
+                <a href="#"><i class="fa-brands fa-square-linkedin fa-2x"></i></a>
+                <a href="#"><i class="fa-solid fa-envelope fa-2x"></i></a>
+              </div>
+            </div>
+
+            <img src="images/headshots/jessica_lam.jpg" id="picture"/>
+            <div class="details"><strong>Jessica Lam</strong>
+              <span>Co-Founder</span>
+            </div>
+          </div>
+
+          <div class="pro">
+            <div class="card">
+              <div class="head">
+                <img src="images/headshots/mitchell_frazeur.jpg" />
+                <div class="name">Mitchell Frazeur</div>
+              </div>
+
+              <div class="content">
+                <div class="role">Co-Founder</div>
+                B.S. Biomedical Engineering (UCI)
+              </div>
+
+              <div class="icons">
+                <a href="#"><i class="fa-brands fa-square-linkedin fa-2x"></i></a>
+                <a href="#"><i class="fa-solid fa-envelope fa-2x"></i></a>
+              </div>
+            </div>
+
+            <img src="images/headshots/mitchell_frazeur.jpg" id="picture"/>
+            <div class="details"><strong>Mitchell Frazeur</strong>
+              <span>Co-Founder</span>
+            </div>
+          </div>
+
+          <div class="pro">
+            <div class="card">
+              <div class="head">
+                <img src="images/headshots/christine_ly.jpg" />
+                <div class="name">Christine Ly</div>
+              </div>
+
+              <div class="content">
+                <div class="role">Co-Founder</div>
+                Biomedical Engineering Ph.D. Student (USC), B.S. Biomedical Engineering (UCI)
+              </div>
+
+              <div class="icons">
+                <a href="#"><i class="fa-brands fa-square-linkedin fa-2x"></i></a>
+                <a href="#"><i class="fa-solid fa-envelope fa-2x"></i></a>
+              </div>
+            </div>
+
+            <img src="images/headshots/christine_ly.jpg" id="picture"/>
+            <div class="details"><strong>Christine Ly</strong>
+              <span>Co-Founder</span>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="header">
-      <h1 style="color: #a1b5d8">Our Mission</h1>
-      <p>Project Pitch</p>
     </div>
   </div>
 
-  <div class="founders">
-    <h1>Founding Team</h1>
-
-    <div class="row">
-      <div class="col">
-        <div class="card">
-          <img src="images/headshots/matthew_lo.jpeg" alt="CEO" style="width: 100%"/>
-          <div class="container">
-            <h2>Matthew Lo</h2>
-            <p class="title">CEO</p>
-            <p style="font-size: 11px;">
-              M.ENG. Biomedical Engineering (UCI)<br />
-              B.S. Biomedical Engineering: Premed (UCI)
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="card">
-          <img src="images/headshots/Alejandra_Reyes_Chavoya.jpg" alt="CFO" style="width: 100%"/>
-          <div class="container">
-            <h2>Alejandra Reyes</h2>
-            <p class="title">CFO</p>
-            <p>B.S. Biomedical Engineering (UCI)</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="card">
-          <img src="images/headshots/gerald_lee.png" alt="Secretary" style="width: 100%"/>
-          <div class="container">
-            <h2>Gerald Lee</h2>
-            <p class="title">Secretary</p>
-            <p style="font-size: 11px;">
-              Data Science Ph.D. Student (UW Seattle)<br />
-              B.S. Biomedical Engineering (UCI)
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col2">
-        <div class="card">
-          <img src="images/headshots/siana_jv.jpg" alt="Co-Founder" style="width: 100%" />
-          <div class="container">
-            <h2 style="font-size: 21px;">Siana Jimenez-Vences</h2>
-            <p class="title">Co-Founder</p>
-            <p style="font-size: 11px;">
-              M.ENG. Biomedical Engineering (UCI)<br/ >
-              B.S. Biomedical Engineering
-              (UCI)
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col2">
-        <div class="card">
-          <img src="images/headshots/jessica_lam.jpg" alt="Co-Founder" style="width: 100%"/>
-          <div class="container">
-            <h2>Jessica Lam</h2>
-            <p class="title">Co-Founder</p>
-            <p>B.S. Biomedical Engineering (UCI)</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col2">
-        <div class="card">
-          <img src="images/headshots/mitchell_frazeur.jpg" alt="Co-Founder" style="width: 100%"/>
-          <div class="container">
-            <h2>Mitchell Frazeur</h2>
-            <p class="title">Co-Founder</p>
-            <p>B.S. Biomedical Engineering (UCI)</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col2">
-        <div class="card">
-          <img src="images/headshots/christine_ly.jpg" alt="Co-Founder" style="width: 100%"/>
-          <div class="container">
-            <h2>Christine Ly</h2>
-            <p class="title">Co-Founder</p>
-            <p style="font-size: 12px;">
-              Biomedical Engineering Ph.D. Student (USC)<br />
-              B.S. Biomedical Engineering (UCI)
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <div class="footer">
-    <div class="footer-left">
+    <div class="footer-left" style="color: white">
       <h6>@ 2025 DermaVision Technologies, Inc. All Rights Reserved.</h6>
     </div>
 
     <div class="footer-right">
-      <button class="ftr privacy">Privacy Policy</button>
-      <button class="ftr terms">Terms of Use</button>
-      <button class="ftr cookies">Cookie Preferences</button>
+      <a href="#" class="ftr">Privacy Policy</a>
+      <a href="#" class="ftr">Terms of Use</a>
+      <a href="#" class="ftr">Cookie Preferences</a>
     </div>
   </div>
-</html>
 
+  <script src="assets/nav.js"></script>
+</html>
