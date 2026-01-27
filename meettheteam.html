@@ -7,48 +7,69 @@
     <link rel="stylesheet" href="meettheteam.css" />
   </head>
 
-  <div class="header" style="color: white">
-    <div class="topnav" style="color: white">
-      <a href="index.html" class="split">DermaVision</a>
-      <a href="helpandresources.html">DV Help & Resources</a>
-      <a href="contactus.html">Contact Us</a>
-      <a href="supportus.html">Support Us</a>
-      <a href="opportunities.html">Opportunities</a>
-      <a href="technology.html">Technology</a>
-      <div class="dropdown">
-        <button class="dropbtn">Company</button>
-        <div class="dropdown-tab">
-          <a href="company.html">Who We Are</a>
-          <a href="meettheteam.html">About The Team</a>
-        </div>
-      </div>
-    </div>
+  <header>
+    <nav>
+      <ul class="sidebar">
+        <li onclick="hideSidebar()">
+          <a href="#"><i class="fa-solid fa-xmark" style="font-size: 20px"></i></a>
+        </li>
+        <li><a href="company.html">Company</a></li>
+        <li><a href="meettheteam.html">About The Team</a></li>
+        <li><a href="technology.html">Technology</a></li>
+        <li><a href="opportunities.html">Opportunities</a></li>
+        <li><a href="supportus.html">Support Us</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+        <li><a href="helpandresources.html">DV Help & Resources</a></li>
+      </ul>
 
-    <h1 style="color: #a1b5d8">Meet the Current Team</h1>
+      <ul>
+        <li>
+          <a href="index.html"><img src="images/logos/DVT_logo_color_WHT.png" width="50px" height="50px" style="padding: 10px" />DermaVision</a>
+        </li>
+        <li class="dropdown hideOnMobile">
+          <a href="#" class="dropbtn">Company</a>
+          <div class="dropdown-tab">
+            <a href="company.html">Who We Are</a>
+            <a href="meettheteam.html">About The Team</a>
+          </div>
+        </li>
+        <li class="hideOnMobile"><a href="technology.html">Technology</a></li>
+        <li class="hideOnMobile">
+          <a href="opportunities.html">Opportunities</a>
+        </li>
+        <li class="hideOnMobile"><a href="supportus.html">Support Us</a></li>
+        <li class="hideOnMobile"><a href="contactus.html">Contact Us</a></li>
+        <li class="hideOnMobile">
+          <a href="helpandresources.html">DV Help & Resources</a>
+        </li>
+        <li class="menubutton" onclick="showSidebar()">
+          <a href="#"
+            ><i class="fa-solid fa-bars" style="font-size: 20px"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+
+    <h1 style="color: white; font-size: 40px;">Meet the Current Team</h1>
     <h2 style="color: white">Engineered From the Group Up</h2>
-    <p style="color: white">
+    <p style="color: white; text-align: center;">
       DermaVision Technologies began as a BME undergraduate-led project under
-      the<br />
-      mentorship of Dr. Elliot Botvinick. Starting from scratch, inspired
-      students designed a<br />
-      proof-of-concept device, created skin models to mimick bruising, and
-      established basic<br />
-      image processing techniques for analyzing acquired data.
+      the mentorship of Dr. Elliot Botvinick. Starting from scratch, inspired
+      students designed a proof-of-concept device, created skin models to mimick bruising, and
+      established basic image processing techniques for analyzing acquired data.
     </p>
 
-    <p style="color: white">
+    <p style="color: white; text-align: center;">
       Our diverse team is working diligently towards a minimum viable product,
-      and continue<br />
-      gathering data in conjunction with the UCI Trauma Center. We are looking
-      forward<br />
-      to displaying more of our progress in the near future!
+      and continue gathering data in conjunction with the UCI Trauma Center. We are looking
+      forward to displaying more of our progress in the near future!
     </p>
 
-    <button class="btn team"><strong>Join Our Team</strong></button>
-  </div>
+    <a href="joinourteam.html" class="join"><strong>Join Our Team</strong></a>
+  </header>
 
   <div class="awards">
-    <h1 style="color: #bc9ec1">Awards</h1>
+    <h1 style="color: white">Awards</h1>
 
     <div class="slideshow-container">
       <div class="mySlides fade">
@@ -98,460 +119,356 @@
     </div>
   </div>
 
-  <div class="members" style="color: white">
+  <div class="members">
     <h1>Project Managers</h1>
 
-    <div class="row">
-      <div class="col">
-        <div class="card">
-          <img
-            src="images/headshots/jessica_lam.jpg"
-            alt="Co-Founder"
-            style="width: 100%"
-          />
-          <div class="container">
-            <h2>Jessica Lam</h2>
-            <p class="title">Hardware</p>
+    <div class="container">
+      <div class="card">
+        <div class="data">
+          <img src="images/headshots/jessica_lam.jpg">
+          <div class="pro_content">
+            <h3>Jessica Lam</h3>
+            <p>Hardware</p>
           </div>
         </div>
-      </div>
 
-      <div class="col">
-        <div class="card">
-          <img src="images/headshots/matthew_lo.jpeg" alt="CEO" style="width: 100%" />
-          <div class="container">
-            <h2>Matthew Lo</h2>
-            <p class="title">Algorithm</p>
+        <div class="data">
+          <img src="images/headshots/matthew_lo.jpeg">
+          <div class="pro_content">
+            <h3>Matthew Lo</h3>
+            <p>Algorithm</p>
           </div>
         </div>
-      </div>
 
-      <div class="col">
-        <div class="card">
-          <img
-            src="images/headshots/Alejandra_Reyes_Chavoya.jpg"
-            alt="CFO"
-            style="width: 100%"
-          />
-          <div class="container">
-            <h2>Alejandra Reyes</h2>
-            <p class="title">Clincal</p>
+        <div class="data">
+          <img src="images/headshots/Alejandra_Reyes_Chavoya.jpg">
+          <div class="pro_content">
+            <h3>Alejandra Reyes</h3>
+            <p>Clinical</p>
           </div>
         </div>
-      </div>
 
-      <div class="col">
-        <div class="card">
-          <img
-            src="images/headshots/gerald_lee.png"
-            alt="Secretary"
-            style="width: 100%"
-          />
-          <div class="container">
-            <h2>Gerald Lee</h2>
-            <p class="title">Operations</p>
+        <div class="data">
+          <img src="images/headshots/gerald_lee.png">
+          <div class="pro_content">
+            <h3>Gerald Lee</h3>
+            <p>Operations</p>
           </div>
         </div>
       </div>
     </div>
 
     <h1>Current Members</h1>
-    <div class="row">
-      <div class="col">
-        <div class="card">
-          <img src="images/headshots/jesseca_racela.jpg" style="width: 100%" />
-          <div class="container">
-            <h2>Jessica Racela</h2>
-            <p class="title">R&D</p>
+
+    <div class="container">
+      <div class="card">
+        <div class="data">
+          <img src="images/headshots/jesseca_racela.jpg">
+          <div class="pro_content">
+            <h3>Jesseca Racela</h3>
+            <p>R&D</p>
           </div>
         </div>
-      </div>
 
-      <div class="col">
-        <div class="card">
-          <img src="images/headshots/kieran_canavan.jpeg" style="width: 100%" />
-          <div class="container">
-            <h2>Kieran Canavan</h2>
-            <p class="title">Clinical</p>
+        <div class="data">
+          <img src="images/headshots/kieran_canavan.jpeg">
+          <div class="pro_content">
+            <h3>Kieran Canavan</h3>
+            <p>Clinical</p>
           </div>
         </div>
-      </div>
 
-      <div class="col">
-        <div class="card">
-          <img src="images/headshots/abrez_hussain.jpeg" style="width: 100%" />
-          <div class="container">
-            <h2>Abrez Hussain</h2>
-            <p class="title">PCB and R&D</p>
+        <div class="data">
+          <img src="images/headshots/abrez_hussain.jpeg">
+          <div class="pro_content">
+            <h3>Abrez Hussain</h3>
+            <p>PCB and R&D</p>
           </div>
         </div>
-      </div>
 
-      <div class="col">
-        <div class="card">
-          <img src="images/headshots/jazmin_arias.jpg" style="width: 100%" />
-          <div class="container">
-            <h2>Jazmin Arias</h2>
-            <p class="title">Operations and Creative</p>
+        <div class="data">
+          <img src="images/headshots/jazmin_arias.jpg">
+          <div class="pro_content">
+            <h3>Jazmin Arias</h3>
+            <p>Operations and Creative</p>
           </div>
         </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col">
-        <div class="card">
-          <img src="images/headshots/sa_jumping_anteater.png" style="width: 100%" />
-          <div class="container">
-            <h2>Yeojin Lee</h2>
-            <p class="title">Algorithm</p>
+    
+        <div class="data">
+          <img src="images/headshots/sa_jumping_anteater.png">
+          <div class="pro_content">
+            <h3>Yeojin Lee</h3>
+            <p>Algorithm</p>
           </div>
         </div>
-      </div>
 
-      <div class="col">
-        <div class="card">
-          <img src="images/headshots/sa_jumping_anteater.png" style="width: 100%" />
-          <div class="container">
-            <h2>Suhani Khandelwal</h2>
-            <p class="title">Algorithm</p>
+        <div class="data">
+          <img src="images/headshots/sa_jumping_anteater.png">
+          <div class="pro_content">
+            <h3>Suhani Khandelwal</h3>
+            <p>Algorithm</p>
           </div>
         </div>
-      </div>
 
-      <div class="col">
-        <div class="card">
-          <img src="images/headshots/sa_jumping_anteater.png" style="width: 100%" />
-          <div class="container">
-            <h2>Sydney Chou</h2>
-            <p class="title">Algorithm and Creative</p>
+        <div class="data">
+          <img src="images/headshots/sa_jumping_anteater.png">
+          <div class="pro_content">
+            <h3>Sydney Chou</h3>
+            <p>Algorithm and Creative</p>
           </div>
         </div>
-      </div>
 
-      <div class="col">
-        <div class="card">
-          <img src="images/headshots/sa_jumping_anteater.png" style="width: 100%" />
-          <div class="container">
-            <h2>Sai Samatham</h2>
-            <p class="title">Algorithm</p>
+        <div class="data">
+          <img src="images/headshots/sa_jumping_anteater.png">
+          <div class="pro_content">
+            <h3>Sai Samatham</h3>
+            <p>Algorithm</p>
           </div>
         </div>
-      </div>
-    </div>
 
-    <div class="row">
-      <div class="col">
-        <div class="card">
-          <img src="images/headshots/sa_jumping_anteater.png" style="width: 100%" />
-          <div class="container">
-            <h2>Niru Suravajjala</h2>
-            <p class="title">R&D</p>
+        <div class="data">
+          <img src="images/headshots/sa_jumping_anteater.png">
+          <div class="pro_content">
+            <h3>Niru Suravajjala</h3>
+            <p>R&D</p>
           </div>
         </div>
-      </div>
 
-      <div class="col">
-        <div class="card">
-          <img src="images/headshots/sa_jumping_anteater.png" style="width: 100%" />
-          <div class="container">
-            <h2>Sydney Mah</h2>
-            <p class="title">R&D</p>
+        <div class="data">
+          <img src="images/headshots/sa_jumping_anteater.png">
+          <div class="pro_content">
+            <h3>Sydney Mah</h3>
+            <p>R&D</p>
           </div>
         </div>
-      </div>
 
-      <div class="col">
-        <div class="card">
-          <img src="images/headshots/sa_jumping_anteater.png" style="width: 100%" />
-          <div class="container">
-            <h2>Harleen Kaur</h2>
-            <p class="title">R&D</p>
+        <div class="data">
+          <img src="images/headshots/sa_jumping_anteater.png">
+          <div class="pro_content">
+            <h3>Harleen Kaur</h3>
+            <p>R&D</p>
           </div>
         </div>
-      </div>
 
-      <div class="col">
-        <div class="card">
-          <img src="images/headshots/sa_jumping_anteater.png" style="width: 100%" />
-          <div class="container">
-            <h2>Fouzia Alsabih</h2>
-            <p class="title">Phantoms and R&D</p>
+        <div class="data">
+          <img src="images/headshots/sa_jumping_anteater.png">
+          <div class="pro_content">
+            <h3>Fouzia Alsabih</h3>
+            <p>Phantoms and R&D</p>
           </div>
         </div>
-      </div>
-    </div>
 
-    <div class="row">
-      <div class="col">
-        <div class="card">
-          <img src="images/headshots/sa_jumping_anteater.png" style="width: 100%" />
-          <div class="container">
-            <h2>Madison Ahwal</h2>
-            <p class="title">Phantoms, PCB and R&D</p>
+        <div class="data">
+          <img src="images/headshots/sa_jumping_anteater.png">
+          <div class="pro_content">
+            <h3>Madison Ahwal</h3>
+            <p>Phantoms, PCB, R&D</p>
           </div>
         </div>
-      </div>
 
-      <div class="col">
-        <div class="card">
-          <img src="images/headshots/sa_jumping_anteater.png" style="width: 100%" />
-          <div class="container">
-            <h2>Janessa Escobar</h2>
-            <p class="title">Phantoms</p>
+        <div class="data">
+          <img src="images/headshots/sa_jumping_anteater.png">
+          <div class="pro_content">
+            <h3>Janessa Escobar</h3>
+            <p>Phantoms</p>
           </div>
         </div>
-      </div>
 
-      <div class="col">
-        <div class="card">
-          <img src="images/headshots/sa_jumping_anteater.png" style="width: 100%" />
-          <div class="container">
-            <h2 style="font-size: 23.5px">Adarsh Radhakrishnan</h2>
-            <p class="title">Entrepreneurship</p>
+        <div class="data">
+          <img src="images/headshots/sa_jumping_anteater.png">
+          <div class="pro_content">
+            <h3>Adarsh Radhakrishnan</h3>
+            <p>Entrepreneurship</p>
           </div>
         </div>
-      </div>
 
-      <div class="col">
-        <div class="card">
-          <img src="images/headshots/sa_jumping_anteater.png" style="width: 100%" />
-          <div class="container">
-            <h2>Ryan Cheng</h2>
-            <p class="title">Entrepreneurship</p>
+        <div class="data">
+          <img src="images/headshots/sa_jumping_anteater.png">
+          <div class="pro_content">
+            <h3>Ryan Cheng</h3>
+            <p>Entrepreneurship</p>
           </div>
         </div>
       </div>
     </div>
 
     <h1>Project Alumni</h1>
-    <div class="row">
-      <div class="col">
-        <div class="card">
-          <img src="images/headshots/elian_lintag.jpg" style="width: 100%" />
-          <div class="container">
-            <h2>Elian Lintag</h2>
-            <p class="title">R&D and Algorithm</p>
+
+    <div class="container">
+      <div class="card">
+        <div class="data">
+          <img src="images/headshots/elian_lintag.jpg">
+          <div class="pro_content">
+            <h3>Elian Lintag</h3>
+            <p>R&D and Algorithm</p>
           </div>
         </div>
-      </div>
 
-      <div class="col">
-        <div class="card">
-          <img src="images/headshots/paul_morenkov.jpg" style="width: 100%" />
-          <div class="container">
-            <h2>Paul Morenkov</h2>
-            <p class="title">Algorithm</p>
+        <div class="data">
+          <img src="images/headshots/paul_morenkov.jpg">
+          <div class="pro_content">
+            <h3>Paul Morenkov</h3>
+            <p>Algorithm</p>
           </div>
         </div>
-      </div>
 
-      <div class="col">
-        <div class="card">
-          <img src="images/headshots/joseph_chei.png" style="width: 100%" />
-          <div class="container">
-            <h2>Joseph Chei</h2>
-            <p class="title">Operations</p>
+        <div class="data">
+          <img src="images/headshots/joseph_chei.png">
+          <div class="pro_content">
+            <h3>Joseph Chei</h3>
+            <p>Operations</p>
           </div>
         </div>
-      </div>
 
-      <div class="col">
-        <div class="card">
-          <img src="images/headshots/david_schoening.jpg" style="width: 100%" />
-          <div class="container">
-            <h2>David Schoening</h2>
-            <p class="title">R&D</p>
+        <div class="data">
+          <img src="images/headshots/david_schoening.jpg">
+          <div class="pro_content">
+            <h3>David Schoening</h3>
+            <p>R&D</p>
           </div>
         </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col">
-        <div class="card">
-          <img src="images/headshots/ravi_tammana.png" style="width: 100%" />
-          <div class="container">
-            <h2>Ravi Tammana</h2>
-            <p class="title">Algorithm</p>
+    
+        <div class="data">
+          <img src="images/headshots/ravi_tammana.png">
+          <div class="pro_content">
+            <h3>Ravi Tammana</h3>
+            <p>Algorithm</p>
           </div>
         </div>
-      </div>
 
-      <div class="col">
-        <div class="card">
-          <img src="images/headshots/candace_dgallegos.jpg" style="width: 100%" />
-          <div class="container">
-            <h2>Candace D. Gallegos</h2>
-            <p class="title">R&D</p>
+        <div class="data">
+          <img src="images/headshots/candace_dgallegos.jpg">
+          <div class="pro_content">
+            <h3>Candace D. Gallegos</h3>
+            <p>R&D</p>
           </div>
         </div>
-      </div>
 
-      <div class="col">
-        <div class="card">
-          <img src="images/headshots/ashley_im.jpg" style="width: 100%" />
-          <div class="container">
-            <h2>Ashley Im</h2>
-            <p class="title">Algorithm</p>
+        <div class="data">
+          <img src="images/headshots/ashley_im.jpg">
+          <div class="pro_content">
+            <h3>Ashley Im</h3>
+            <p>Algorithm</p>
           </div>
         </div>
-      </div>
 
-      <div class="col">
-        <div class="card">
-          <img src="images/headshots/chloe_chow.jpg" style="width: 100%" />
-          <div class="container">
-            <h2>Chloe Chow</h2>
-            <p class="title">R&D</p>
+        <div class="data">
+          <img src="images/headshots/chloe_chow.jpg">
+          <div class="pro_content">
+            <h3>Chloe Chow</h3>
+            <p>R&D</p>
           </div>
         </div>
-      </div>
-    </div>
 
-    <div class="row">
-      <div class="col">
-        <div class="card">
-          <img src="images/headshots/sa_grad5_anteater.png" style="width: 100%" />
-          <div class="container">
-            <h2>Derek Nutz</h2>
-            <p class="title">Operations</p>
+        <div class="data">
+          <img src="images/headshots/sa_grad5_anteater.png">
+          <div class="pro_content">
+            <h3>Derek Nutz</h3>
+            <p>Operations</p>
           </div>
         </div>
-      </div>
 
-      <div class="col">
-        <div class="card">
-          <img src="images/headshots/sa_grad5_anteater.png" style="width: 100%" />
-          <div class="container">
-            <h2>Alana Le</h2>
-            <p class="title">Algorithm</p>
+        <div class="data">
+          <img src="images/headshots/sa_grad5_anteater.png">
+          <div class="pro_content">
+            <h3>Alana Le</h3>
+            <p>Algorithm</p>
           </div>
         </div>
-      </div>
 
-      <div class="col">
-        <div class="card">
-          <img src="images/headshots/sa_grad5_anteater.png" style="width: 100%" />
-          <div class="container">
-            <h2>Hao Ngo</h2>
-            <p class="title">R&D</p>
+        <div class="data">
+          <img src="images/headshots/sa_grad5_anteater.png">
+          <div class="pro_content">
+            <h3>Hao Ngo</h3>
+            <p>R&D</p>
           </div>
         </div>
-      </div>
 
-      <div class="col">
-        <div class="card">
-          <img src="images/headshots/sa_grad5_anteater.png" style="width: 100%" />
-          <div class="container">
-            <h2>Alex Phay</h2>
-            <p class="title">R&D</p>
+        <div class="data">
+          <img src="images/headshots/sa_grad5_anteater.png">
+          <div class="pro_content">
+            <h3>Alex Phay</h3>
+            <p>R&D</p>
           </div>
         </div>
-      </div>
-    </div>
 
-    <div class="row">
-      <div class="col">
-        <div class="card">
-          <img src="images/headshots/sa_grad5_anteater.png" style="width: 100%" />
-          <div class="container">
-            <h2>Bella Jimenez</h2>
-            <p class="title">R&D</p>
+        <div class="data">
+          <img src="images/headshots/sa_grad5_anteater.png">
+          <div class="pro_content">
+            <h3>Bella Jimenez</h3>
+            <p>R&D</p>
           </div>
         </div>
-      </div>
 
-      <div class="col">
-        <div class="card">
-          <img src="images/headshots/sa_grad5_anteater.png" style="width: 100%" />
-          <div class="container">
-            <h2>Claire Livengood</h2>
-            <p class="title">R&D</p>
+        <div class="data">
+          <img src="images/headshots/sa_grad5_anteater.png">
+          <div class="pro_content">
+            <h3>Claire Livengood</h3>
+            <p>R&D</p>
           </div>
         </div>
-      </div>
 
-      <div class="col">
-        <div class="card">
-          <img src="images/headshots/sa_grad5_anteater.png" style="width: 100%" />
-          <div class="container">
-            <h2>Nikki Fulcomer</h2>
-            <p class="title">Algorithm</p>
+        <div class="data">
+          <img src="images/headshots/sa_grad5_anteater.png">
+          <div class="pro_content">
+            <h3>Nikki Fulcomer</h3>
+            <p>Algorithm</p>
           </div>
         </div>
-      </div>
 
-      <div class="col">
-        <div class="card">
-          <img src="images/headshots/sa_grad5_anteater.png" style="width: 100%" />
-          <div class="container">
-            <h2>Ruth Regi</h2>
-            <p class="title">Algorithm</p>
+        <div class="data">
+          <img src="images/headshots/sa_grad5_anteater.png">
+          <div class="pro_content">
+            <h3>Ruth Regi</h3>
+            <p>Algorithm</p>
           </div>
         </div>
-      </div>
-    </div>
 
-    <div class="row">
-      <div class="col">
-        <div class="card">
-          <img src="images/headshots/sa_grad5_anteater.png" style="width: 100%" />
-          <div class="container">
-            <h2>Athena Weber</h2>
-            <p class="title">Algorithm</p>
+        <div class="data">
+          <img src="images/headshots/sa_grad5_anteater.png">
+          <div class="pro_content">
+            <h3>Athena Weber</h3>
+            <p>Algorithm</p>
           </div>
         </div>
-      </div>
 
-      <div class="col">
-        <div class="card">
-          <img src="images/headshots/sa_grad5_anteater.png" style="width: 100%" />
-          <div class="container">
-            <h2>Katie Tremble</h2>
-            <p class="title">Clinical</p>
+        <div class="data">
+          <img src="images/headshots/sa_grad5_anteater.png">
+          <div class="pro_content">
+            <h3>Katie Tremble</h3>
+            <p>Clinical</p>
           </div>
         </div>
-      </div>
 
-      <div class="col">
-        <div class="card">
-          <img src="images/headshots/sa_grad5_anteater.png" style="width: 100%" />
-          <div class="container">
-            <h2>Ali Hetta</h2>
-            <p class="title">Clinical</p>
+        <div class="data">
+          <img src="images/headshots/sa_grad5_anteater.png">
+          <div class="pro_content">
+            <h3>Ali Hetta</h3>
+            <p>Clinical</p>
           </div>
         </div>
-      </div>
 
-      <div class="col">
-        <div class="card">
-          <img src="images/headshots/sa_grad5_anteater.png" style="width: 100%" />
-          <div class="container">
-            <h2>Edouard Aleman</h2>
-            <p class="title">Clinical</p>
+        <div class="data">
+          <img src="images/headshots/sa_grad5_anteater.png">
+          <div class="pro_content">
+            <h3>Edouard Aleman</h3>
+            <p>Clinical</p>
           </div>
         </div>
-      </div>
-    </div>
 
-    <div class="row">
-      <div class="col">
-        <div class="card">
-          <img src="images/headshots/sa_grad5_anteater.png" style="width: 100%" />
-          <div class="container">
-            <h2>Elijah Castro</h2>
-            <p class="title">Clinical</p>
+        <div class="data">
+          <img src="images/headshots/sa_grad5_anteater.png">
+          <div class="pro_content">
+            <h3>Elijah Castro</h3>
+            <p>Clinical</p>
           </div>
         </div>
-      </div>
 
-      <div class="col">
-        <div class="card">
-          <img src="images/headshots/sa_grad5_anteater.png" style="width: 100%" />
-          <div class="container">
-            <h2>Monika Lyons</h2>
-            <p class="title">Clinical</p>
+        <div class="data">
+          <img src="images/headshots/sa_grad5_anteater.png">
+          <div class="pro_content">
+            <h3>Monika Lyons</h3>
+            <p>Clinical</p>
           </div>
         </div>
       </div>
@@ -564,8 +481,7 @@
     <div class="acknowledgements">
       <h3>
         We would like to especially thank Dr. Elliot Botvinick and Dr. Christine King
-        for their<br />
-        excellent guidance and for their everlasting excitement. Our team is honored<br />
+        for their excellent guidance and for their everlasting excitement. Our team is honored 
         to have their mentorship while navigating our project.
       </h3>
     </div>
@@ -575,20 +491,11 @@
       skills and supported our efforts.</strong>
     </p>
 
-    <div class="row">
-      <div class="col">
-        <img src="images/logos/beams_logo.png" alt="BEAMS" style="width: 100%" />
-      </div>
-      <div class="col">
-        <img
-          src="images/logos/ssoe_logo.png" alt="UCI Samueli School of Engineering" style="width: 100%"/>
-      </div>
-      <div class="col">
-        <img src="images/logos/urop_logo.jpg" alt="UROP" style="width: 100%" />
-      </div>
-      <div class="col">
-        <img src="images/logos/antrepreneur_logo.png" alt="UCI ANTrepreneur Center" style="width: 100%"/>
-      </div>
+    <div class="logos">
+      <img src="images/logos/beams_logo.png" alt="BEAMS" style="width: 100%" />
+      <img src="images/logos/ssoe_logo.png" alt="UCI Samueli School of Engineering" style="width: 100%" />
+      <img src="images/logos/urop_logo.jpg" alt="UROP" style="width: 100%" />
+      <img src="images/logos/antrepreneur_logo.png" alt="UCI ANTrepreneur Center" style="width: 100%" />
     </div>
   </div>
 
@@ -598,43 +505,12 @@
     </div>
 
     <div class="footer-right">
-      <button class="ftr privacy">Privacy Policy</button>
-      <button class="ftr terms">Terms of Use</button>
-      <button class="ftr cookies">Cookie Preferences</button>
+      <a href="#" class="ftr">Privacy Policy</a>
+      <a href="#" class="ftr">Terms of Use</a>
+      <a href="#" class="ftr">Cookie Preferences</a>
     </div>
   </div>
 
-  <script>
-    let slideIndex = 1;
-    showSlides(slideIndex);
-
-    function plusSlides(n) {
-      showSlides((slideIndex += n));
-    }
-
-    function currentSlide(n) {
-      showSlides((slideIndex = n));
-    }
-
-    function showSlides(n) {
-      let i;
-      let slides = document.getElementsByClassName("mySlides");
-      let dots = document.getElementsByClassName("dot");
-      if (n > slides.length) {
-        slideIndex = 1;
-      }
-      if (n < 1) {
-        slideIndex = slides.length;
-      }
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex - 1].style.display = "block";
-      dots[slideIndex - 1].className += " active";
-    }
-  </script>
+  <script src="assets/nav.js"></script>
+  <script src="assets/slide.js"></script>
 </html>
-
