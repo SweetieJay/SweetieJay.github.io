@@ -7,60 +7,78 @@
     <link rel="stylesheet" href="joinourteam.css" />
   </head>
 
-  <div class="header" style="color: white">
-    <div class="topnav" style="color: white">
-      <a href="index.html" class="split">DermaVision</a>
-      <a href="helpandresources.html">DV Help & Resources</a>
-      <a href="contactus.html">Contact Us</a>
-      <a href="supportus.html">Support Us</a>
-      <a href="opportunities.html">Opportunities</a>
-      <a href="technology.html">Technology</a>
-      <div class="dropdown">
-        <button class="dropbtn">Company</button>
-        <div class="dropdown-tab">
-          <a href="company.html">Who We Are</a>
-          <a href="meettheteam.html">About The Team</a>
-        </div>
-      </div>
-    </div>
+  <header>
+    <nav>
+      <ul class="sidebar">
+        <li onclick="hideSidebar()">
+          <a href="#"><i class="fa-solid fa-xmark" style="font-size: 20px"></i></a>
+        </li>
+        <li><a href="company.html">Company</a></li>
+        <li><a href="meettheteam.html">About The Team</a></li>
+        <li><a href="technology.html">Technology</a></li>
+        <li><a href="opportunities.html">Opportunities</a></li>
+        <li><a href="supportus.html">Support Us</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+        <li><a href="helpandresources.html">DV Help & Resources</a></li>
+      </ul>
 
-    <h1 style="color: #a1b5d8">Join Our Team</h1>
-    <h2 style="color: white">Apply to Join the DermaVision Team!</h2>
+      <ul>
+        <li>
+          <a href="index.html"><img src="images/logos/DVT_logo_color_WHT.png" width="50px" height="50px" style="padding: 10px" />DermaVision</a>
+        </li>
+        <li class="dropdown hideOnMobile">
+          <a href="#" class="dropbtn">Company</a>
+          <div class="dropdown-tab">
+            <a href="company.html">Who We Are</a>
+            <a href="meettheteam.html">About The Team</a>
+          </div>
+        </li>
+        <li class="hideOnMobile"><a href="technology.html">Technology</a></li>
+        <li class="hideOnMobile">
+          <a href="opportunities.html">Opportunities</a>
+        </li>
+        <li class="hideOnMobile"><a href="supportus.html">Support Us</a></li>
+        <li class="hideOnMobile"><a href="contactus.html">Contact Us</a></li>
+        <li class="hideOnMobile">
+          <a href="helpandresources.html">DV Help & Resources</a>
+        </li>
+        <li class="menubutton" onclick="showSidebar()">
+          <a href="#"
+            ><i class="fa-solid fa-bars" style="font-size: 20px"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+
+    <h1 style="color: white; font-size: 40px;">Join Our Team</h1>
     <p style="color: white">
       Here you'll learn about our requirements and the process involved in
       joining the team!
     </p>
-  </div>
+  </header>
 
   <div class="qualifications">
-    <div class="timelineblock">
-      <h1>Timeline</h1>
+    <div class="timeline">
+      <h1 style="font-size: 40px;">Timeline</h1>
+      <div class="timelineblock">
+        <div class="circle">
+          <h3 style="color: white;"><strong>Spring</strong></h3>
+          <h4 style="color: white;">Recruitment: Learn more about bonus qualifications and expectations</h4>
+        </div>
 
-			<div class="row">
-				<div class="col">
-					<div class="circle">
-						<h3 style="color: white;"><strong>Spring</strong></h3>
-						<h4 style="color: white;">Recruitment: Learn more about bonus qualifications and expectations</h4>
-					</div>
-				</div>
-				<div class="col">
-					<div class="circle">
-						<h3 style="color: white;"><strong>Summer</strong></h3>
-						<h4 style="color: white;">Interviews, Acceptances, <br />
-              and Onboarding</h4>
-					</div>
-				</div>
-				<div class="col">
-					<div class="circle">
-						<h3 style="color: white;"><strong>After</strong></h3>
-						<h4 style="color: white;">Learning to Work with <br />
-              your Subteams</h4>
-					</div>
-				</div>
-			</div>
-		</div>
+        <div class="circle">
+          <h3 style="color: white;"><strong>Summer</strong></h3>
+          <h4 style="color: white;">Interviews, Acceptances, and Onboarding</h4>
+        </div>
 
-    <h1>Qualifications</h1>
+        <div class="circle">
+          <h3 style="color: white;"><strong>After</strong></h3>
+          <h4 style="color: white;">Learning to Work with your Subteams</h4>
+        </div>
+      </div>
+    </div>
+
+    <h1 style="font-size: 40px;">Qualifications</h1>
     <div class="block1">
         <p><strong>Full-Time Undergraduate (Incoming 2nd, 3rd, or 4th Year)</strong></p>
         <div class="ordivider">OR</div>
@@ -79,11 +97,11 @@
     </div>
     <div class="block3">
       <p><strong>PLEASE NOTE:</strong><br />
-        We no longer consider applications for BME 180 or other senior<br />
-        design teams. Selection criteria for BME 180 specific opportunities<br />
-        will stay consistent with the course schedule. If you happen to be<br />
-        a student taking the senior design course, but also wants to<br />
-        participate in DermaVision, you would have to commit the time<br />
+        We no longer consider applications for BME 180 or other senior 
+        design teams. Selection criteria for BME 180 specific opportunities 
+        will stay consistent with the course schedule. If you happen to be 
+        a student taking the senior design course, but also wants to 
+        participate in DermaVision, you would have to commit the time 
         outside of 180.</p>
     </div>
     <h2>Applications Open: Spring 2026</h2>
@@ -92,14 +110,15 @@
 
   <div class="footer">
     <div class="footer-left">
-      <h6>@ 2025 DermaVision Technologies, Inc. All Rights Reserved.</h6>
+      <h6 style="color: black;">@ 2025 DermaVision Technologies, Inc. All Rights Reserved.</h6>
     </div>
 
     <div class="footer-right">
-      <button class="ftr privacy">Privacy Policy</button>
-      <button class="ftr terms">Terms of Use</button>
-      <button class="ftr cookies">Cookie Preferences</button>
+      <a href="#" class="ftr">Privacy Policy</a>
+      <a href="#" class="ftr">Terms of Use</a>
+      <a href="#" class="ftr">Cookie Preferences</a>
     </div>
   </div>
-</html>
 
+  <script src="assets/nav.js"></script>
+</html>
