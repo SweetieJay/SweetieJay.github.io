@@ -386,8 +386,10 @@ header {
   }
 
   header {
-    background-position: center;
     min-height: 50vh;
+	background-size: 200%;
+	background-position: top;
+	
     
     h1 {
       margin-top: 20vh;
@@ -437,6 +439,8 @@ header {
   }
 
   header {
+	background-size: 250%;
+	  
     h1 {
       margin: 15vh 1vh 0 1vh;
     }
