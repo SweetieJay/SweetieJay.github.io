@@ -13,10 +13,26 @@ body {
   width: 100%;
   height: 100vh;
 
+	h1, h2 {
+		font-family: Georgia, 'Times New Roman', Times, serif;
+	}
+
   h1 {
     text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+		font-size: 8vh;
   }
+
+	h2, h3 {
+		font-size: 6vh;
+	}
+
+	h4, p {
+		font-size: 4vh;
+	}
+
+	a {
+		font-size: 3vh;
+	}
 }
 
 nav {
@@ -60,7 +76,7 @@ nav {
   height: 100vh;
   width: 250px;
   z-index: 999;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(10px);
   box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
   display: none;
@@ -144,6 +160,7 @@ header {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
+	margin: 0 2%;
 }
 
 .timelineblock {
@@ -153,23 +170,20 @@ header {
   border-radius: 30px;
   width: fit-content;
   height: fit-content;
-  padding: 2rem;
-  margin: 2rem 0;
+  padding: 2% 3%;
+  margin: 2% 0;
   gap: 2rem;
 }
 
 .circle {
-	height: 240px;
-	width: 260px;
+	height: 100%;
+	width: 75%;
 	background-color: #1F2232;
 	border-radius: 50%;
+	margin: 0 12%;
   
   h3, h4 {
     margin: 30px;
-  }
-
-  h3 {
-    font-size: 30px;
   }
 
   h4 {
@@ -204,7 +218,6 @@ header {
 	text-align: center;
 
 	p {
-		font-size: 1.5rem;
     padding: 40px;
 	}
 }
@@ -222,7 +235,6 @@ header {
 	text-align: center;
 	
 	p {
-		font-size: 1.5rem;
     padding: 40px;
 	}
 }
@@ -250,8 +262,9 @@ header {
 	font-family: "Amiko";
 	background-color: #a1b5d8;
 	color: white;
+	text-decoration: none;
 	padding: 12px 20px;
-	border: 2px solid white;
+	border: 3px solid white;
 	border-radius: 50px;
 	cursor: pointer;
 	margin-top: 20px;
@@ -265,6 +278,10 @@ header {
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: #BC9EC18C;
+
+	h6 {
+		font-size: 1rem;
+	}
 }
 
 .footer-left {
@@ -282,13 +299,13 @@ header {
     background-color: inherit;
     text-decoration: none;
     padding: 5px 5px;
-    font-size: 10px;
+    font-size: 2vh;
     cursor: pointer;
     display: inline-block;
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1450px) {
   .hideOnMobile {
     display: none;
   }
@@ -297,23 +314,49 @@ header {
     display: block;
   }
 
-  .timelineblock {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .circle {
-    height: 300px;
-    width: 320px;
-
-    h3, h4 {
-      font-size: 1.5rem;
-      margin: 40px;
-    }
-  }
+	.circle {
+		width: 80%;
+		margin: 0 10%;
+	}
 }
 
-@media (max-width: 400px) {
+@media (max-width: 850px) {
+	header { 
+		background-position: center;
+	}
+	
   .sidebar {
     width: 100%;
   }
+
+	.timeline {
+		margin: 0 10%;
+	}
+
+	.timelineblock {
+    grid-template-columns: repeat(1, 1fr);
+		padding: 5%;
+  }
+
+  .circle {
+		width: 60%;
+		margin: 0 20%;
+
+    h3, h4 {
+      margin: 40px;
+    }
+  }
+
+	.footer {
+		h6 {
+			font-size: 0.75rem;
+		}
+	}
+}
+
+@media (max-width: 500px) {
+	.circle {
+		width: 100%;
+		margin: 0;
+	}
 }
