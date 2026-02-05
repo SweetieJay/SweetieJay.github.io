@@ -17,23 +17,19 @@ body {
 
   h1 {
     text-align: center;
-    font-size: 8vh;
+    font-size: 3.5vw;
   }
 
-  h2 {
-    font-size: 6vh;
-  }
-
-  h3 {
-    font-size: 5vh;
+  h2, h3 {
+    font-size: 2vw;
   }
 
   p {
-    font-size: 4vh;
+    font-size: 1.5vw;
   }
 
   a {
-    font-size: 3vh;
+    font-size: 1.25vw;
   }
 }
 
@@ -195,6 +191,7 @@ header {
     text-align: right;
     padding-top: 10%;
     margin-right: 10%;
+    font-size: 3vw;
   }
 
   p {
@@ -210,7 +207,6 @@ header {
     border-radius: 30px;
     padding: 10px 50px;
     text-decoration: none;
-    font-size: 4vh;
     font-weight: 600;
     position: absolute;
     bottom: 20vh;
@@ -243,10 +239,6 @@ header {
 
   h3 {
     padding-bottom: 20px;
-  }
-
-  p {
-    font-size: 3vh;
   }
 
 	a {
@@ -320,7 +312,6 @@ header {
     border: none;
     background-color: inherit;
     padding: 5px 5px;
-    font-size: 2vh;
     cursor: pointer;
     display: inline-block;
     color: white;
@@ -376,8 +367,27 @@ header {
     width: 100%;
   }
 
+  body {
+    h1 {
+      font-size: 4.5vw;
+    }
+
+    h2, h3 {
+      font-size: 3vw;
+    }
+
+    p {
+      font-size: 2.5vw;
+    }
+
+    a {
+      font-size: 2.25vw;
+    }
+  }
+
   header {
     background-position: center;
+    min-height: 50vh;
     
     h1 {
       margin-top: 20vh;
@@ -390,8 +400,9 @@ header {
 
   .theteam {
     h2 {
-      padding-top: 10%;
+      padding-top: 35%;
       margin-right: 5%;
+      font-size: 4vw;
     }
 
     p {
@@ -400,30 +411,39 @@ header {
 
     a {
       padding: 10px 30px;
-      bottom: 10vh;
+      bottom: 20vh;
       right: 5vw;
-    }
-  }
-
-  .footer {
-    h6 {
-      font-size: 0.75rem;
     }
   }
 }
 
 @media (max-width: 500px) {
-  .theteam {
-    h2 {
-      font-size: 5vh;
+  body {
+    h1 {
+      font-size: 5.5vw;
+    }
+
+    h2, h3 {
+      font-size: 4vw;
     }
 
     p {
-      font-size: 3vh;
+      font-size: 3.5vw;
     }
 
     a {
-      font-size: 3vh;
+      font-size: 2.75vw;
+    }
+  }
+
+  header {
+    h1 {
+      margin: 15vh 1vh 0 1vh;
+    }
+  }
+
+  .theteam {   
+    a {
       padding: 10px 20px;
     }
   }
@@ -431,6 +451,12 @@ header {
   .articlecard {
     img {
       height: 250px;
+    }
+  }
+  
+  .footer {
+    h6 {
+      font-size: 0.75rem;
     }
   }
 }
