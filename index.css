@@ -365,6 +365,10 @@ header {
 @media (max-width: 850px) {
   .sidebar {
     width: 100%;
+	  
+		a {
+			font-size: 3.5vw;
+		}
   }
 
   body {
@@ -420,6 +424,12 @@ header {
 }
 
 @media (max-width: 500px) {
+	.sidebar {
+    a {
+			font-size: 5vw;
+		}
+  }
+	
   body {
     h1 {
       font-size: 5.5vw;
@@ -464,3 +474,4 @@ header {
     }
   }
 }
+
