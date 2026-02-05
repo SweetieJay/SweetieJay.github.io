@@ -11,9 +11,29 @@
 body {
   font-family: "Amiko";
 
+  h1, h2, h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
   h1 {
     text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 8vh;
+  }
+
+  h2 {
+    font-size: 6vh;
+  }
+
+  h3 {
+    font-size: 5vh;
+  }
+
+  p {
+    font-size: 4vh;
+  }
+
+  a {
+    font-size: 3vh;
   }
 }
 
@@ -58,7 +78,7 @@ nav {
   height: 100vh;
   width: 250px;
   z-index: 999;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(10px);
   box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
   display: none;
@@ -124,16 +144,11 @@ header {
 .DermaSpect a {
 	background-color: #008080;
   color: white;
-	height: 30px;
-	border: 2px solid white;
+	border: 3px solid white;
 	border-radius: 30px;
-	padding: 10px;
+	padding: 10px 30px;
   text-decoration: none;
-}
-
-a:visited {
-	color: #6b6b6b;
-	text-decoration: none;
+  font-weight: 600;
 }
 
 .core {
@@ -152,7 +167,6 @@ a:visited {
 		border: none;
 		gap: 10px;
 		font-family: "Amiko";
-		font-size: 20px;
 		color: white;
 	}
 
@@ -179,7 +193,6 @@ a:visited {
 
   h2 {
     text-align: right;
-    font-family: Georgia, 'Times New Roman', Times, serif;
     padding-top: 10%;
     margin-right: 10%;
   }
@@ -193,11 +206,12 @@ a:visited {
   a {
     background-color: #008080;
     color: white;
-    border: 2px solid white;
+    border: 3px solid white;
     border-radius: 30px;
-    padding: 10px;
-    width: 120px;
+    padding: 10px 50px;
     text-decoration: none;
+    font-size: 4vh;
+    font-weight: 600;
     position: absolute;
     bottom: 20vh;
     right: 20vw;
@@ -206,11 +220,11 @@ a:visited {
 
 .news {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-template-columns: repeat(3, 1fr);
 	place-self: center;
 	padding: 10px;
 	gap: 20px;
-	max-width: 1200px;
+  margin: 20px;
 }
 
 .articlecard {
@@ -222,15 +236,18 @@ a:visited {
 	flex-direction: column;
 	margin-bottom: 30px;
 
-	h1 {
-		font-size: 20px;
-	}
-
 	img {
-		width: 100%;
-		height: 250px;
+		height: 350px;
 		object-fit: fill;
 	}
+
+  h3 {
+    padding-bottom: 20px;
+  }
+
+  p {
+    font-size: 3vh;
+  }
 
 	a {
 		display: inline-block;
@@ -246,7 +263,6 @@ a:visited {
 
 	.desc {
 		padding: 15px;
-		flex-grow: 1;
 	} 
 }
 
@@ -278,12 +294,12 @@ a:visited {
     text-decoration: none;
   }
 
-  .fa-brands {
-    font-size: 30px;
+  h6 {
+    font-size: 1rem;
   }
 
-  .fa-square-x-twitter {
-    color: black;
+  .fa-brands {
+    font-size: 30px;
   }
 
 	.fa-square-linkedin {
@@ -304,14 +320,14 @@ a:visited {
     border: none;
     background-color: inherit;
     padding: 5px 5px;
-    font-size: 10px;
+    font-size: 2vh;
     cursor: pointer;
     display: inline-block;
     color: white;
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1450px) {
   .hideOnMobile {
     display: none;
   }
@@ -331,7 +347,6 @@ a:visited {
     }
 
     h2 {
-      padding-top: 15%;
       margin-right: 5%;
     }
 
@@ -348,14 +363,22 @@ a:visited {
   .news {
 		grid-template-columns: 1fr;
 	}
+
+  .articlecard {
+    img {
+      height: 450px;
+    }
+  }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 850px) {
   .sidebar {
     width: 100%;
   }
 
   header {
+    background-position: center;
+    
     h1 {
       margin-top: 20vh;
     }
@@ -367,20 +390,47 @@ a:visited {
 
   .theteam {
     h2 {
-      font-size: 30px;
       padding-top: 10%;
       margin-right: 5%;
     }
 
     p {
-      font-size: 0.75rem;
       margin-right: 5%;
     }
 
     a {
-      width: 100px;
+      padding: 10px 30px;
       bottom: 10vh;
       right: 5vw;
+    }
+  }
+
+  .footer {
+    h6 {
+      font-size: 0.75rem;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .theteam {
+    h2 {
+      font-size: 5vh;
+    }
+
+    p {
+      font-size: 3vh;
+    }
+
+    a {
+      font-size: 3vh;
+      padding: 10px 20px;
+    }
+  }
+
+  .articlecard {
+    img {
+      height: 250px;
     }
   }
 }
