@@ -20,7 +20,24 @@ body {
 
 	h1 {
 		padding: 20px;
+		font-size: 8vh;
 	}
+
+	h2 {
+    font-size: 6vh;
+  }
+
+  h3 {
+    font-size: 5vh;
+  }
+
+  p {
+    font-size: 4vh;
+  }
+
+  a {
+    font-size: 3vh;
+  }
 }
 
 nav {
@@ -64,7 +81,7 @@ nav {
   height: 100vh;
   width: 250px;
   z-index: 999;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(10px);
   box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
   display: none;
@@ -116,10 +133,6 @@ header {
   background-attachment: fixed;
   text-align: center;
 
-  h1 {
-    margin-top: 10vh;
-  }
-
   p {
     padding: 30px;
   }
@@ -127,6 +140,7 @@ header {
 
 .join {
 	font-family: "Amiko";
+	font-size: 4vh;
 	background-color: #a1b5d8;
 	color: white;
   text-decoration: none;
@@ -252,13 +266,13 @@ header {
 
 .heading {
 	margin-top: 30px;
-	font-size: 40px;
+	font-size: 5vh;
 	text-align: center;
 	color: #a1b5d8;
 }
 
 .subheading {
-	font-size: 20px;
+	font-size: 4vh;
 	text-align: center;
 	color: #a1b5d8;
 }
@@ -266,21 +280,22 @@ header {
 .description {
 	text-align: center;
 	color: #a1b5d8;
+	padding: 0 20px;
 }
 
 .learn {
 	display: block;
-	margin: 0 auto;
-	align-items: center;
+	text-align: center;
 	font-family: "Amiko";
 	background-color: #a1b5d8;
 	color: white;
+	text-decoration: none;
+	margin: 5% 35%;
 	padding: 12px 20px;
+	width: 30%;
 	border: none;
 	border-radius: 4px;
 	cursor: pointer;
-	margin-top: 20px;
-	margin-bottom: 15px;
 }
 
 .members {
@@ -293,7 +308,7 @@ header {
 }
 
 .container {
-  width: 1100px;
+  width: 90vw;
 	box-sizing: border-box;
 
 	img {
@@ -330,12 +345,12 @@ header {
 	color: white;
 
 	h3 {
-		font-size: 1rem;
+		font-size: 3.5vh;
 		padding-bottom: 10px;
 	}
 
 	p {
-		font-size: 0.75rem;
+		font-size: 2.25vh;
 	}
 }
 
@@ -376,6 +391,10 @@ header {
   padding-top: 20px;
   padding-bottom: 20px;
 	background-color: #E5E7EB;
+
+	h6 {
+    font-size: 1rem;
+  }
 }
 
 .footer-left {
@@ -393,14 +412,14 @@ header {
     background-color: inherit;
     text-decoration: none;
     padding: 5px 5px;
-    font-size: 10px;
+    font-size: 2vh;
     cursor: pointer;
     display: inline-block;
   }
 }
 
 
-@media (max-width: 800px) {
+@media (max-width: 1450px) {
   .hideOnMobile {
     display: none;
   }
@@ -409,8 +428,11 @@ header {
     display: block;
   }
 
+	.join {
+		padding: 12px 20px;
+	}
+
   .container {
-    max-width: 650px;
 		margin: 0 auto;
 
 		.card {
@@ -420,11 +442,11 @@ header {
 
 	.pro_content {
 		h3 {
-			font-size: 1.25rem;
+			font-size: 6vh;
 		}
 
 		p {
-			font-size: 1rem;
+			font-size: 4vh;
 		}
 	}
 
@@ -433,17 +455,94 @@ header {
 	}
 }
 
-@media (max-width: 400px) {
+@media (max-width: 850px) {
   .sidebar {
     width: 100%;
   }
 
+	header {		
+		p {
+			font-size: 3vh;
+		}
+	}
+
+	.join {
+		font-size: 3vh;
+	}
+
 	.container {
-    max-width: 350px;
 		margin: 0 auto;
 
 		.card {
 			grid-template-columns: repeat(1, 1fr);
 		}
   }
+
+	.footer {
+		h6 {
+			font-size: 0.75rem;
+		}
+	}
+}
+
+@media (max-width: 500px) {
+	body {
+		h1 {
+			font-size: 6vh;
+		}
+
+		h2 {
+			font-size: 4vh;
+		}
+
+		h3 {
+			font-size: 3vh;
+		}
+
+		p {
+			font-size: 3vh;
+		}
+	}
+
+	header {
+		background-position: center;
+
+		p {
+			padding: 10px;
+		}
+	}
+
+	.overlay {
+		img {
+			padding-top: 10px;
+		}
+
+		.heading {
+			margin-top: 10px;
+			font-size: 20px;
+		}
+
+		.subheading {
+			font-size: 15px;
+		}
+
+		.description {
+			font-size: 0.75rem;
+		}
+	}
+
+	.learn {
+		margin: 3% 25%;
+		width: 50%;
+	}
+
+	.pro_content {
+		h3 {
+			font-size: 5vh;
+		}
+
+		p {
+			font-size: 3vh;
+		}
+	}
 }
