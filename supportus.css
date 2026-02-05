@@ -14,8 +14,24 @@ body {
   width: 100%;
   height: 100vh;
 
-  h1 {
+  h1, h2 {
     font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  h1 {
+    font-size: 8vh;
+  }
+
+  h2 {
+    font-size: 6vh;
+  }
+
+  p {
+    font-size: 4vh;
+  }
+
+  a {
+    font-size: 3vh;
   }
 }
 
@@ -60,7 +76,7 @@ nav {
   height: 100vh;
   width: 250px;
   z-index: 999;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(10px);
   box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
   display: none;
@@ -160,10 +176,12 @@ header {
     }
 
     h1 {
+      font-size: 6vh;
       padding: 20px 0;
     }
 
     p {
+      font-size: 3.5vh;
       padding: 10px 0;
     }
 
@@ -186,10 +204,9 @@ header {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
-
-  h1, h2, p {
-    text-align: center;
-  }
+  display: flex;
+  justify-content: center;
+  text-align: center;
 
   h1 {
     padding: 20px;
@@ -204,56 +221,13 @@ header {
 	border: 3px solid #fffcf7;
 	border-radius: 8px;
 	background-color: #665d66;
+  margin: 20px 0;
 	padding: 8px 23px;
-	font-size: 15px;
+	font-size: 4vh;
 	font-family: "Amiko";
 	cursor: pointer;
 	display: inline-block;
 	color: white;
-}
-
-.btncontainer {
-	display: flex;
-	justify-content: center;
-	gap: 15px;
-	padding-top: 20px;
-}
-
-.donationbtn {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	gap: 20px;
-}
-
-input[type="text"], select, textarea {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	font-family: "Amiko";
-	width: 20%;
-	padding: 10px;
-	border: 1px solid #ccc;
-	border-radius: 4px;
-	box-sizing: border-box;
-	margin-top: 6px;
-	margin-bottom: 16px;
-}
-
-input[type="submit"] {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	font-family: "Amiko";
-  font-weight: 600;
-	background-color: #b266b2;
-	color: white;
-	padding: 12px 20px;
-	border: none;
-	border-radius: 4px;
-	cursor: pointer;
-	margin-top: 6px;
-	margin-bottom: 16px;
 }
 
 .merch {
@@ -261,11 +235,10 @@ input[type="submit"] {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding: 2rem;
-  background-color: #FFFCF7;
   text-align: center;
 
   h1 {
-    padding-top: 20%;
+    padding-top: 10%;
     padding-bottom: 20px;
   }
 
@@ -290,7 +263,10 @@ input[type="submit"] {
 	align-items: center;
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: #FFFCF7;
+
+  h6 {
+    font-size: 1rem;
+  }
 }
 
 .footer-left {
@@ -308,13 +284,13 @@ input[type="submit"] {
     background-color: inherit;
     text-decoration: none;
     padding: 5px 5px;
-    font-size: 10px;
+    font-size: 2vh;
     cursor: pointer;
     display: inline-block;
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1450px) {
   .hideOnMobile {
     display: none;
   }
@@ -329,21 +305,29 @@ input[type="submit"] {
 
   .linkedinbox {
     grid-template-columns: repeat(1, 1fr);
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
+    align-items: center;
 
     img {
-      width: 75%;
+      width: 55%;
       height: 85%;
       border-radius: 20px;
-      margin: 2rem 0 0 5rem;
+      margin: 0 23%;
     }
 
     .backbox {
-      width: 75%;
-      height: 100%;
-      background-color: #A1B5D8;
+      width: 55%;
+      height: 110%;
       border-radius: 20px;
-      margin: 0 0 2rem 5rem;
+      margin: 0 23%;
+
+      h1 {
+        padding: 20px 0 20px 10px;
+      }
+
+      p {
+        padding: 10px;
+      }
     }
   }
 
@@ -352,19 +336,31 @@ input[type="submit"] {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 850px) {
   .sidebar {
     width: 100%;
   }
 
+  header {
+    background-position: center;
+  }
+
   .linkedinbox {
     img {
-      margin: 2rem 0 0 3rem;
+      width: 65%;
+      height: 95%;
+      margin: 0 20%;
     }
 
     .backbox {
-      margin: 0 0 2rem 3rem;
+      width: 65%;
+      height: 100%;
+      margin: 0 20%;
     }
+  }
+
+  .donation {
+    background-position: center;
   }
 
   .merch {
@@ -372,6 +368,29 @@ input[type="submit"] {
 
     img {
       padding-top: 10%;
+    }
+  }
+
+  .footer {
+    h6 {
+      font-size: 0.75rem;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .linkedinbox {
+    img {
+      width: 75%;
+      margin: 5% 14% 0 14%;
+      border-radius: 20px 20px 0 0;
+    }
+
+    .backbox {
+      width: 75%;
+      height: 105%;
+      margin: 0 14%;
+      border-radius: 0 0 20px 20px;
     }
   }
 }
