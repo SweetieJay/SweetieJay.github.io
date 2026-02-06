@@ -581,11 +581,11 @@ header {
 
 		.heading {
 			margin-top: 10px;
-			font-size: 20px;
+			font-size: 5vw;
 		}
 
 		.subheading {
-			font-size: 15px;
+			font-size: 4vw;
 		}
 
 		.description {
@@ -593,16 +593,8 @@ header {
 		}
 	}
 
-	.heading {
-		font-size: 5vw;
-	}
-
-	.subheading {
-		font-size: 4vw;
-	}
-
 	.learn {
-		margin: 8% 25%;
+		margin: 5% 25%;
 		width: 50%;
 	}
 
@@ -622,3 +614,4 @@ header {
 		}
 	}
 }
+
