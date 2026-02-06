@@ -19,19 +19,19 @@ body {
   }
 
   h1 {
-    font-size: 8vh;
+    font-size: 3.5vw;
   }
 
   h2 {
-    font-size: 6vh;
+    font-size: 2vw;
   }
 
   p {
-    font-size: 4vh;
+    font-size: 1.5vw;
   }
 
   a {
-    font-size: 3vh;
+    font-size: 1.25vw;
   }
 }
 
@@ -176,12 +176,12 @@ header {
     }
 
     h1 {
-      font-size: 6vh;
+      font-size: 2vw;
       padding: 20px 0;
     }
 
     p {
-      font-size: 3.5vh;
+      font-size: 1.5vw;
       padding: 10px 0;
     }
 
@@ -223,7 +223,7 @@ header {
 	background-color: #665d66;
   margin: 20px 0;
 	padding: 8px 23px;
-	font-size: 4vh;
+	font-size: 1.5vw;
 	font-family: "Amiko";
 	cursor: pointer;
 	display: inline-block;
@@ -284,7 +284,6 @@ header {
     background-color: inherit;
     text-decoration: none;
     padding: 5px 5px;
-    font-size: 2vh;
     cursor: pointer;
     display: inline-block;
   }
@@ -339,6 +338,28 @@ header {
 @media (max-width: 850px) {
   .sidebar {
     width: 100%;
+
+    a {
+			font-size: 3.5vw;
+		}
+  }
+
+  body {
+    h1 {
+      font-size: 4.5vw;
+    }
+
+    h2 {
+      font-size: 3vw;
+    }
+
+    p {
+      font-size: 2.5vw;
+    }
+
+    a {
+      font-size: 2.25vw;
+    }
   }
 
   header {
@@ -350,17 +371,31 @@ header {
       width: 65%;
       height: 95%;
       margin: 0 20%;
+      border-radius: 20px 20px 0 0;
     }
 
     .backbox {
       width: 65%;
-      height: 100%;
+      height: 110%;
       margin: 0 20%;
+      border-radius: 0 0 20px 20px;
+
+      h1 {
+        font-size: 3vw;
+      }
+
+      p {
+        font-size: 2.5vw;
+      }
     }
   }
 
   .donation {
     background-position: center;
+  }
+
+  .btn {
+    font-size: 2.5vw;
   }
 
   .merch {
@@ -370,27 +405,61 @@ header {
       padding-top: 10%;
     }
   }
-
-  .footer {
-    h6 {
-      font-size: 0.75rem;
-    }
-  }
 }
 
 @media (max-width: 500px) {
+  .sidebar {
+    a {
+			font-size: 5vw;
+		}
+  }
+
+  body {
+    h1 {
+      font-size: 5.5vw;
+    }
+
+    h2 {
+      font-size: 4vw;
+    }
+
+    p {
+      font-size: 3.5vw;
+    }
+
+    a {
+      font-size: 2.75vw;
+    }
+  }
+
   .linkedinbox {
     img {
       width: 75%;
       margin: 5% 14% 0 14%;
-      border-radius: 20px 20px 0 0;
     }
 
     .backbox {
       width: 75%;
       height: 105%;
       margin: 0 14%;
-      border-radius: 0 0 20px 20px;
+
+      h1 {
+        font-size: 4vw;
+      }
+
+      p {
+        font-size: 3.5vw;
+      }
+    }
+  }
+
+  .btn {
+    font-size: 3.5vw;
+  }
+
+  .footer {
+    h6 {
+      font-size: 0.75rem;
     }
   }
 }
