@@ -400,6 +400,10 @@ header {
 		}
 	}
 
+	header {
+		background-size: 250%;
+	}
+
 	.timeline {
 		margin: 0;
 	}
@@ -425,4 +429,5 @@ header {
 		}
 	}
 }
+
 
