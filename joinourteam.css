@@ -19,19 +19,19 @@ body {
 
   h1 {
     text-align: center;
-		font-size: 8vh;
+		font-size: 3.5vw;
   }
 
 	h2, h3 {
-		font-size: 6vh;
+		font-size: 2vw;
 	}
 
 	h4, p {
-		font-size: 4vh;
+		font-size: 1.5vw;
 	}
 
 	a {
-		font-size: 3vh;
+		font-size: 1.25vw;
 	}
 }
 
@@ -160,7 +160,7 @@ header {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	margin: 0 2%;
+	margin: 0 3%;
 }
 
 .timelineblock {
@@ -177,10 +177,10 @@ header {
 
 .circle {
 	height: 100%;
-	width: 75%;
+	width: 65%;
 	background-color: #1F2232;
 	border-radius: 50%;
-	margin: 0 12%;
+	margin: 0 15%;
   
   h3, h4 {
     margin: 30px;
@@ -299,7 +299,6 @@ header {
     background-color: inherit;
     text-decoration: none;
     padding: 5px 5px;
-    font-size: 2vh;
     cursor: pointer;
     display: inline-block;
   }
@@ -315,48 +314,112 @@ header {
   }
 
 	.circle {
-		width: 80%;
-		margin: 0 10%;
+		width: 70%;
 	}
 }
 
-@media (max-width: 850px) {
+@media (max-width: 850px) {	
+  .sidebar {
+    width: 100%;
+
+		a {
+			font-size: 3.5vw;
+		}
+  }
+
+	body {
+		h1 {
+			font-size: 4.5vw;
+		}
+
+		h2, h3 {
+			font-size: 3vw;
+		}
+
+		h4, p {
+			font-size: 2.5vw;
+		}
+
+		a {
+			font-size: 2.25vw;
+		}
+	}
+
 	header { 
 		background-position: center;
 	}
-	
-  .sidebar {
-    width: 100%;
-  }
 
 	.timeline {
-		margin: 0 10%;
+		margin: 0 5%;
 	}
 
 	.timelineblock {
     grid-template-columns: repeat(1, 1fr);
-		padding: 5%;
+		padding: 10% 30%;
   }
 
   .circle {
-		width: 60%;
-		margin: 0 20%;
+		width: 300px;
+		height: 300px;
+		margin: 0;
 
-    h3, h4 {
-      margin: 40px;
+		h3 {
+			margin: 30% 2% 5% 2%;
+		}
+
+    h4 {
+      margin: 0 2% 20% 2%;
     }
   }
+}
+
+@media (max-width: 500px) {
+	.sidebar {
+		a {
+			font-size: 5vw;
+		}
+  }
+
+	body {
+		h1 {
+			font-size: 5.5vw;
+		}
+
+		h2, h3 {
+			font-size: 4vw;
+		}
+
+		h4, p {
+			font-size: 3.5vw;
+		}
+
+		a {
+			font-size: 2.75vw;
+		}
+	}
+
+	.timeline {
+		margin: 0;
+	}
+
+	.timelineblock {
+    grid-template-columns: repeat(1, 1fr);
+		padding: 10%;
+  }
+
+	.circle {
+		h3 {
+			font-size: 4.5vw;
+		}
+
+		h4 {
+			font-size: 4vw;
+		}
+	}
 
 	.footer {
 		h6 {
 			font-size: 0.75rem;
 		}
-	}
-}
-
-@media (max-width: 500px) {
-	.circle {
-		width: 100%;
-		margin: 0;
 	}
 }
