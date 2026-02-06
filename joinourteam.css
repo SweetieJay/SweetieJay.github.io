@@ -346,7 +346,9 @@ header {
 	}
 
 	header { 
-		background-position: center;
+		min-height: 30vh;
+    background-size: 200%;
+    background-position: top;
 	}
 
 	.timeline {
@@ -423,3 +425,4 @@ header {
 		}
 	}
 }
+
