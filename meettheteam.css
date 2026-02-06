@@ -10,33 +10,26 @@
 
 body {
   font-family: "Amiko";
-  width: 100%;
-  height: 100vh;
 
   h1, h2 {
-    text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
   }
 
-	h1 {
-		padding: 20px;
-		font-size: 8vh;
-	}
-
-	h2 {
-    font-size: 6vh;
+  h1 {
+    text-align: center;
+    font-size: 3.5vw;
   }
 
-  h3 {
-    font-size: 5vh;
+  h2, h3 {
+    font-size: 2vw;
   }
 
   p {
-    font-size: 4vh;
+    font-size: 1.5vw;
   }
 
   a {
-    font-size: 3vh;
+    font-size: 1.25vw;
   }
 }
 
@@ -133,6 +126,10 @@ header {
   background-attachment: fixed;
   text-align: center;
 
+	h1 {
+		padding: 5% 5% 3% 5%;
+	}
+
   p {
     padding: 30px;
   }
@@ -140,7 +137,7 @@ header {
 
 .join {
 	font-family: "Amiko";
-	font-size: 4vh;
+	font-size: 1.5vw;
 	background-color: #a1b5d8;
 	color: white;
   text-decoration: none;
@@ -266,13 +263,13 @@ header {
 
 .heading {
 	margin-top: 30px;
-	font-size: 5vh;
+	font-size: 2vw;
 	text-align: center;
 	color: #a1b5d8;
 }
 
 .subheading {
-	font-size: 4vh;
+	font-size: 1vw;
 	text-align: center;
 	color: #a1b5d8;
 }
@@ -305,6 +302,10 @@ header {
 	align-items: center;
 	height: fit-content;
 	margin: 0 auto;
+
+	h1 {
+		padding-top: 5%;
+	}
 }
 
 .container {
@@ -345,12 +346,12 @@ header {
 	color: white;
 
 	h3 {
-		font-size: 3.5vh;
+		font-size: 1.5vw;
 		padding-bottom: 10px;
 	}
 
 	p {
-		font-size: 2.25vh;
+		font-size: 1vw;
 	}
 }
 
@@ -412,7 +413,6 @@ header {
     background-color: inherit;
     text-decoration: none;
     padding: 5px 5px;
-    font-size: 2vh;
     cursor: pointer;
     display: inline-block;
   }
@@ -432,6 +432,14 @@ header {
 		padding: 12px 20px;
 	}
 
+	.heading {
+		font-size: 3vw;
+	}
+
+	.subheading {
+		font-size: 2vw;
+	}
+
   .container {
 		margin: 0 auto;
 
@@ -442,11 +450,11 @@ header {
 
 	.pro_content {
 		h3 {
-			font-size: 6vh;
+			font-size: 2.5vw;
 		}
 
 		p {
-			font-size: 4vh;
+			font-size: 2vw;
 		}
 	}
 
@@ -458,16 +466,46 @@ header {
 @media (max-width: 850px) {
   .sidebar {
     width: 100%;
+
+		a {
+			font-size: 3.5vw;
+		}
+  }
+
+	body {
+    h1 {
+      font-size: 4.5vw;
+    }
+
+    h2, h3 {
+      font-size: 3vw;
+    }
+
+    p {
+      font-size: 2.5vw;
+    }
+
+    a {
+      font-size: 2.25vw;
+    }
   }
 
 	header {		
-		p {
-			font-size: 3vh;
-		}
+		min-height: 60vh;
+    background-size: 200%;
+    background-position: top;
 	}
 
 	.join {
-		font-size: 3vh;
+		font-size: 2.5vw;
+	}
+
+	.heading {
+		font-size: 4vw;
+	}
+
+	.subheading {
+		font-size: 3vw;
 	}
 
 	.container {
@@ -478,37 +516,61 @@ header {
 		}
   }
 
-	.footer {
-		h6 {
-			font-size: 0.75rem;
+	.pro_content {
+		h3 {
+			font-size: 4vw;
+		}
+
+		p {
+			font-size: 3.5vw;
 		}
 	}
 }
 
 @media (max-width: 500px) {
-	body {
+	.sidebar {
+    a {
+			font-size: 5vw;
+		}
+  }
+
+  body {
+    h1 {
+      font-size: 5.5vw;
+    }
+
+    h2, h3 {
+      font-size: 4vw;
+    }
+
+    p {
+      font-size: 3.5vw;
+    }
+
+    a {
+      font-size: 2.75vw;
+    }
+  }
+
+	header {
+		background-size: 250%;
+
 		h1 {
-			font-size: 6vh;
-		}
-
-		h2 {
-			font-size: 4vh;
-		}
-
-		h3 {
-			font-size: 3vh;
+			padding-top: 10%;
 		}
 
 		p {
-			font-size: 3vh;
+			padding: 20px;
 		}
 	}
 
-	header {
-		background-position: center;
+	.join {
+		font-size: 3.5vw;
+	}
 
-		p {
-			padding: 10px;
+	.awards {
+		h1 {
+			padding-top: 10px;
 		}
 	}
 
@@ -531,18 +593,32 @@ header {
 		}
 	}
 
+	.heading {
+		font-size: 5vw;
+	}
+
+	.subheading {
+		font-size: 4vw;
+	}
+
 	.learn {
-		margin: 3% 25%;
+		margin: 8% 25%;
 		width: 50%;
 	}
 
 	.pro_content {
 		h3 {
-			font-size: 5vh;
+			font-size: 5vw;
 		}
 
 		p {
-			font-size: 3vh;
+			font-size: 4vw;
+		}
+	}
+
+	.footer {
+		h6 {
+			font-size: 0.75rem;
 		}
 	}
 }
