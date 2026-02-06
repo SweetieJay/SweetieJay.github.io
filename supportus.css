@@ -432,6 +432,10 @@ header {
     }
   }
 
+	header {
+    background-size: 250%;
+  }
+
   .linkedinbox {
     img {
       width: 75%;
@@ -463,3 +467,4 @@ header {
     }
   }
 }
+
