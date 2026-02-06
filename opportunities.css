@@ -16,15 +16,15 @@ body {
   h1 {
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 8vh;
+    font-size: 3.5vw;
   }
 
   p {
-    font-size: 4vh;
+    font-size: 1.5vw;
   }
 
   a {
-    font-size: 3vh;
+    font-size: 1.25vw;
   }
 }
 
@@ -202,7 +202,6 @@ header {
     background-color: inherit;
     text-decoration: none;
     padding: 5px 5px;
-    font-size: 2vh;
     cursor: pointer;
     display: inline-block;
   }
@@ -219,37 +218,77 @@ header {
 }
 
 @media (max-width: 850px) {
-  header {
-    background-position: center;
-  }
-  
   .sidebar {
     width: 100%;
+
+    a {
+			font-size: 3.5vw;
+		}
   }
 
-  .internships {
-    h1, p {
-      padding-top: 30px;
+  body {
+    h1 {
+      font-size: 4.5vw;
+    }
+
+    h2, h3 {
+      font-size: 3vw;
+    }
+
+    p {
+      font-size: 2.5vw;
+    }
+
+    a {
+      font-size: 2.25vw;
     }
   }
 
-  .volunteering {
-    h1, p {
-      padding-top: 20px;
+  header {
+    background-position: center;
+  }
+
+  .internships, .volunteering {
+    h1 {
+      padding: 20% 5% 5% 5%;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .sidebar {
+    a {
+			font-size: 5vw;
+		}
+  }
+
+  body {
+    h1 {
+      font-size: 5.5vw;
+    }
+
+    h2, h3 {
+      font-size: 4vw;
+    }
+
+    p {
+      font-size: 3.5vw;
+    }
+
+    a {
+      font-size: 2.75vw;
+    }
+  }
+
+  .internships, .volunteering {
+    h1 {
+      padding: 30% 5% 5% 5%;
     }
   }
 
   .footer {
     h6 {
       font-size: 0.75rem;
-    }
-  }
-}
-
-@media (max-width: 500px) {
-  .internships, .volunteering {
-    h1, p {
-      padding-top: 10px;
     }
   }
 }
