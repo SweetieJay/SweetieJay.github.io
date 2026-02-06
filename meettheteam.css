@@ -553,6 +553,7 @@ header {
   }
 
 	header {
+		min-height: 70vh;
 		background-size: 250%;
 
 		h1 {
@@ -614,4 +615,5 @@ header {
 		}
 	}
 }
+
 
