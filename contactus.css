@@ -255,7 +255,8 @@ input[type="submit"] {
   }
 
   header {
-		background-position: center;
+    background-size: 200%;
+    background-position: top;
   }
 
 	.content1 {
@@ -317,3 +318,4 @@ input[type="submit"] {
 		}
 	}
 }
+
