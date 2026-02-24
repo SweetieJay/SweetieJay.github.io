@@ -466,19 +466,21 @@ header {
 
   .container {
 		margin: 0 auto;
+		justify-items: center;
 
 		.card {
 			grid-template-columns: repeat(2, 1fr);
+			width: 75%;
 		}
   }
 
 	.pro_content {
 		h3 {
-			font-size: 2.5vw;
+			font-size: 2.25vw;
 		}
 
 		p {
-			font-size: 2vw;
+			font-size: 1.5vw;
 		}
 	}
 
@@ -556,7 +558,7 @@ header {
 		}
 
 		p {
-			font-size: 3.5vw;
+			font-size: 3vw;
 		}
 	}
 }
@@ -630,6 +632,12 @@ header {
 	.learn {
 		margin: 5% 25%;
 		width: 50%;
+	}
+
+	.container {
+		.card {
+			width: 100%;
+		}
 	}
 
 	.pro_content {
