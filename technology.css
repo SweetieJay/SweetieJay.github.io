@@ -271,6 +271,39 @@ header {
   }
 }
 
+@media (max-width: 1280px) {
+  .grid {
+    .box1 {
+      width: 350px;
+      height: 350px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .Derma {
+    height: 50vh;
+  }
+  
+  .grid {
+    margin: 2% 5%;
+
+    .box1 {
+      width: 275px;
+      height: 275px;
+    }
+  }
+}
+
+@media (max-width: 935px) {
+  .grid {
+    .box1 {
+      width: 250px;
+      height: 250px;
+    }
+  }
+}
+
 @media (max-width: 850px) {
   .sidebar {
     width: 100%;
@@ -318,7 +351,12 @@ header {
 
   .grid {
     grid-template-columns: repeat(1, 1fr);
-    margin-left: 25%;
+    margin: 0 25%;
+
+    .box1 {
+      width: 375px;
+      height: 375px;
+    }
   }
 
   .change {
