@@ -309,8 +309,13 @@ header {
     }
   }
 
+  .internshipsback, .volunteeringback {
+    height: 60vh;
+  }
+
   .internships a {
     font-size: 3.5vw;
+    padding: 10px 20px;
   }
 
   .footer {
@@ -319,3 +324,4 @@ header {
     }
   }
 }
+
