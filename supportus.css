@@ -354,7 +354,8 @@ header {
   }
 
   header {
-    background-position: center;
+    background-size: 200%;
+    background-position: top;
   }
 
   .linkedinbox {
@@ -444,3 +445,4 @@ header {
     }
   }
 }
+
