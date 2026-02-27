@@ -129,11 +129,7 @@ header {
 
   h1 {
     margin-top: 35vh;
-  }
-
-  p {
-    text-align: center;
-    padding: 30px;
+	  padding-bottom: 30px;
   }
 }
 
@@ -464,3 +460,4 @@ header {
     }
   }
 }
+
